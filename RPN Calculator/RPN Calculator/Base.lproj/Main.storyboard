@@ -132,6 +132,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="81.5" height="70"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                                 <state key="normal" title="."/>
+                                                <connections>
+                                                    <action selector="enterDecimalPoint:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="ham-OS-mZf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tr4-dt-yCS">
                                                 <rect key="frame" x="105.5" y="0.0" width="81.5" height="70"/>

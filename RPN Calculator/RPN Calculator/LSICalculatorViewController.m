@@ -34,13 +34,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.digitAccumulator addDigitWithNumericValue:3];
-    [self.digitAccumulator addDecimalPoint];
-    [self.digitAccumulator addDigitWithNumericValue:1];
-    [self.digitAccumulator addDigitWithNumericValue:4];
-    
-    printf("Number: %f", [self.digitAccumulator value]);
-    
     [self updateViews];
 }
 
@@ -50,6 +43,11 @@
 
 - (IBAction)enterNumericDigit:(UIButton *)sender {
     [self.digitAccumulator addDigitWithNumericValue:(int)[sender tag]];
+    [self updateViews];
+}
+
+- (IBAction)enterDecimalPoint:(UIButton *)sender {
+    [self.digitAccumulator addDecimalPoint];
     [self updateViews];
 }
 
