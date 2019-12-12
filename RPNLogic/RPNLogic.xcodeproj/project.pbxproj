@@ -10,6 +10,10 @@
 		8005E19F23A2D7D000950329 /* RPNLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 8005E19D23A2D7D000950329 /* RPNLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8005E1B123A2DAAF00950329 /* JLRStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 8005E1AF23A2DAAF00950329 /* JLRStack.h */; };
 		8005E1B223A2DAAF00950329 /* JLRStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8005E1B023A2DAAF00950329 /* JLRStack.m */; };
+		8005E1B723A2E94500950329 /* JLRDigitAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8005E1B523A2E94500950329 /* JLRDigitAccumulator.h */; };
+		8005E1B823A2E94500950329 /* JLRDigitAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8005E1B623A2E94500950329 /* JLRDigitAccumulator.m */; };
+		8005E1BF23A2EFA000950329 /* JLRCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8005E1BD23A2EFA000950329 /* JLRCalculator.h */; };
+		8005E1C023A2EFA100950329 /* JLRCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8005E1BE23A2EFA000950329 /* JLRCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +22,10 @@
 		8005E19E23A2D7D000950329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8005E1AF23A2DAAF00950329 /* JLRStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLRStack.h; sourceTree = "<group>"; };
 		8005E1B023A2DAAF00950329 /* JLRStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLRStack.m; sourceTree = "<group>"; };
+		8005E1B523A2E94500950329 /* JLRDigitAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLRDigitAccumulator.h; sourceTree = "<group>"; };
+		8005E1B623A2E94500950329 /* JLRDigitAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLRDigitAccumulator.m; sourceTree = "<group>"; };
+		8005E1BD23A2EFA000950329 /* JLRCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLRCalculator.h; sourceTree = "<group>"; };
+		8005E1BE23A2EFA000950329 /* JLRCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLRCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				8005E19D23A2D7D000950329 /* RPNLogic.h */,
-				8005E1B323A2DAD300950329 /* Stack */,
 				8005E19E23A2D7D000950329 /* Info.plist */,
+				8005E1B323A2DAD300950329 /* Stack */,
+				8005E1C123A2EFA600950329 /* Calculator */,
+				8005E1B923A2E94A00950329 /* Digit Accumulator */,
 			);
 			path = RPNLogic;
 			sourceTree = "<group>";
@@ -66,6 +76,24 @@
 			path = Stack;
 			sourceTree = "<group>";
 		};
+		8005E1B923A2E94A00950329 /* Digit Accumulator */ = {
+			isa = PBXGroup;
+			children = (
+				8005E1B523A2E94500950329 /* JLRDigitAccumulator.h */,
+				8005E1B623A2E94500950329 /* JLRDigitAccumulator.m */,
+			);
+			path = "Digit Accumulator";
+			sourceTree = "<group>";
+		};
+		8005E1C123A2EFA600950329 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				8005E1BD23A2EFA000950329 /* JLRCalculator.h */,
+				8005E1BE23A2EFA000950329 /* JLRCalculator.m */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -74,7 +102,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8005E1B123A2DAAF00950329 /* JLRStack.h in Headers */,
+				8005E1B723A2E94500950329 /* JLRDigitAccumulator.h in Headers */,
 				8005E19F23A2D7D000950329 /* RPNLogic.h in Headers */,
+				8005E1BF23A2EFA000950329 /* JLRCalculator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8005E1C023A2EFA100950329 /* JLRCalculator.m in Sources */,
 				8005E1B223A2DAAF00950329 /* JLRStack.m in Sources */,
+				8005E1B823A2E94500950329 /* JLRDigitAccumulator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
