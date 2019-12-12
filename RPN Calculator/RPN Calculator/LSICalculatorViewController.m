@@ -33,22 +33,47 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self updateViews];
 }
 
-- (void)updateViews{
+- (void)showAccumulatorValue{
     [self.textField setText:[self.digitAccumulator valueString]];
+}
+
+- (void)showCalculatorTopValue {
+    [self.textField setText:[NSString stringWithFormat:@"%f", [self.calculator topValue]]];
 }
 
 - (IBAction)enterNumericDigit:(UIButton *)sender {
     [self.digitAccumulator addDigitWithNumericValue:(int)[sender tag]];
-    [self updateViews];
+    
+    [self showAccumulatorValue];
 }
 
 - (IBAction)enterDecimalPoint:(UIButton *)sender {
     [self.digitAccumulator addDecimalPoint];
-    [self updateViews];
+    
+    [self showAccumulatorValue];
+}
+
+- (IBAction)enterNumber:(UIButton *)sender {
+    
+    [self.calculator pushNumber:[self.digitAccumulator value]];
+    [self.digitAccumulator clear];
+    
+    [self showAccumulatorValue];
+}
+
+- (IBAction)performOperation:(UIButton *)sender {
+    // If the user entered a new number, use that number. If not, use the result of the previous operation
+    if (self.digitAccumulator.value) {
+        [self.calculator pushNumber:[self.digitAccumulator value]];
+    }
+    [self.digitAccumulator clear];
+    
+    // Because the rawValue type of the operation is a form of integer, we can just pass in the tag of the operator
+    [self.calculator applyOperator:sender.tag];
+    
+    [self showCalculatorTopValue];
 }
 
 @end

@@ -50,10 +50,13 @@
                                                     <action selector="enterNumericDigit:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="v29-9G-Vqp"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGj-0n-Ww0">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGj-0n-Ww0">
                                                 <rect key="frame" x="316.5" y="0.0" width="81.5" height="70"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                                 <state key="normal" title="÷"/>
+                                                <connections>
+                                                    <action selector="performOperation:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="Q9o-Tz-6wg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -84,10 +87,13 @@
                                                     <action selector="enterNumericDigit:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="yfS-p0-bDd"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5F-sa-mrL">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5F-sa-mrL">
                                                 <rect key="frame" x="316.5" y="0.0" width="81.5" height="70"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                                 <state key="normal" title="×"/>
+                                                <connections>
+                                                    <action selector="performOperation:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="M2u-P9-83m"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -118,10 +124,13 @@
                                                     <action selector="enterNumericDigit:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="vny-6L-lse"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbv-re-Ule">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbv-re-Ule">
                                                 <rect key="frame" x="316.5" y="0.0" width="81.5" height="70"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                                 <state key="normal" title="–"/>
+                                                <connections>
+                                                    <action selector="performOperation:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="0GT-hv-YO0"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -148,11 +157,17 @@
                                                 <rect key="frame" x="211" y="0.0" width="81.5" height="70"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                                 <state key="normal" title="⏎"/>
+                                                <connections>
+                                                    <action selector="enterNumber:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="1V1-IG-bbJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgX-OT-wMX">
                                                 <rect key="frame" x="316.5" y="0.0" width="81.5" height="70"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                                 <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="performOperation:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="naF-GY-rOU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
