@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WOM-RB-Ecd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calculator View Controller-->
+        <scene sceneID="vNn-ks-eFz">
+            <objects>
+                <viewController restorationIdentifier="CalculatorViewController" id="WOM-RB-Ecd" customClass="CalculatorViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ox-gS-ill">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="P0P-gb-d5F">
+                                <rect key="frame" x="8" y="64" width="398" height="398"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="JgS-fx-7oe">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="70"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="jLR-5V-wCt">
+                                        <rect key="frame" x="0.0" y="82" width="398" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqf-eJ-GbT">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="T1P-vc-s3X"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcW-aw-9a7">
+                                                <rect key="frame" x="105.5" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="wcd-HG-e1m"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZ9-9A-SBf">
+                                                <rect key="frame" x="211" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="xzF-sf-5bg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGj-0n-Ww0">
+                                                <rect key="frame" x="316.5" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="÷"/>
+                                                <connections>
+                                                    <action selector="divideAccumulatedResults:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="g62-ag-2sn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="lI1-Rc-cbD">
+                                        <rect key="frame" x="0.0" y="164" width="398" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpK-Vs-nYI">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="DYN-Fx-X83"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLV-mg-9FY">
+                                                <rect key="frame" x="105.5" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="Pjr-5N-aKX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6u-eu-Zna">
+                                                <rect key="frame" x="211" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="WPo-BV-Zwc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5F-sa-mrL">
+                                                <rect key="frame" x="316.5" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="×"/>
+                                                <connections>
+                                                    <action selector="multipyAccumulatedResults:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="OM8-AQ-Pkg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="o4a-k9-WYy">
+                                        <rect key="frame" x="0.0" y="246" width="398" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvi-5H-fw6">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="OL0-Xi-i9R"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zj5-49-eKi">
+                                                <rect key="frame" x="105.5" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="REI-xa-CT5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tg-bD-Gpc">
+                                                <rect key="frame" x="211" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="VlU-jm-igH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbv-re-Ule">
+                                                <rect key="frame" x="316.5" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="–"/>
+                                                <connections>
+                                                    <action selector="subtractAccumulatedResults:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="8tA-HH-7qj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="7jo-qg-F7y">
+                                        <rect key="frame" x="0.0" y="328" width="398" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jx7-1C-uRo">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="."/>
+                                                <connections>
+                                                    <action selector="enterDecimal:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="5MA-gd-o4A"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tr4-dt-yCS">
+                                                <rect key="frame" x="105.5" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="K0T-9W-66g"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhs-2m-CcB">
+                                                <rect key="frame" x="211" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="⏎"/>
+                                                <connections>
+                                                    <action selector="saveNumberToCalculator:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="DSl-k0-Ki2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgX-OT-wMX">
+                                                <rect key="frame" x="316.5" y="0.0" width="81.5" height="70"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="addAccumulatedResults:" destination="WOM-RB-Ecd" eventType="touchUpInside" id="Wes-d1-h3L"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uFE-gF-ZwW" firstAttribute="trailing" secondItem="P0P-gb-d5F" secondAttribute="trailing" constant="8" id="1Ox-Z7-jHi"/>
+                            <constraint firstItem="P0P-gb-d5F" firstAttribute="leading" secondItem="uFE-gF-ZwW" secondAttribute="leading" constant="8" id="Qc3-bA-NRE"/>
+                            <constraint firstItem="P0P-gb-d5F" firstAttribute="top" secondItem="uFE-gF-ZwW" secondAttribute="top" constant="20" id="rC7-eF-vs7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uFE-gF-ZwW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kx5-XT-VnC"/>
+                    <connections>
+                        <outlet property="textField" destination="JgS-fx-7oe" id="mzd-LB-fLD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRR-Tw-TWG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
