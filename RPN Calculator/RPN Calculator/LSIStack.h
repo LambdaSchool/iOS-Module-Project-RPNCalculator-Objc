@@ -12,8 +12,9 @@
 
 - (instancetype) initWith:(NSArray *)array;
 
-- (void)push:(NSNumber *)number;
-- (NSNumber *)pop;
-- (NSNumber *)peek;
+- (void)push:(double)number;
+- (double)pop;
+- (double)peek;
+- (void)clear;
 
 @end

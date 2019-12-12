@@ -24,18 +24,22 @@
     return self;
 }
 
-- (void)push:(NSNumber *)number {
-    [self.values addObject:number];
+- (void)push:(double)number {
+    [self.values addObject:[NSNumber numberWithDouble:number]];
 }
 
-- (NSNumber *)pop {
-    NSNumber *value = [[self.values firstObject] copy];
+- (double)pop {
+    NSNumber *value = [self.values firstObject];
     [self.values removeObjectAtIndex:0];
-    return value;
+    return [value doubleValue];
 }
 
-- (NSNumber *)peek {
-    return [[self.values firstObject] copy];
+- (double)peek {
+    return [[self.values firstObject] doubleValue];
+}
+
+- (void)clear {
+    [self.values removeAllObjects];
 }
 
 @end
