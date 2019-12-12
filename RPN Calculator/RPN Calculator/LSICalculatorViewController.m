@@ -7,26 +7,37 @@
 //
 
 #import "LSICalculatorViewController.h"
+#import "LSIDigitAccumulator.h"
+#import "LSICalculator.h"
 
 @interface LSICalculatorViewController ()
+
+@property LSIDigitAccumulator *digitAccumulator;
+@property LSICalculator *calculator;
 
 @end
 
 @implementation LSICalculatorViewController
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        _digitAccumulator = [[LSIDigitAccumulator alloc] init];
+        _calculator = [[LSICalculator alloc] init];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self.digitAccumulator addDigitWithNumericValue:3];
+    [self.digitAccumulator addDecimalPoint];
+    [self.digitAccumulator addDigitWithNumericValue:1];
+    [self.digitAccumulator addDigitWithNumericValue:4];
+    
+    printf("Number: %0.2f", [self.digitAccumulator value]);    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
