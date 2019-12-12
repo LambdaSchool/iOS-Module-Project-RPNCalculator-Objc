@@ -15,6 +15,8 @@
 @property LSIDigitAccumulator *digitAccumulator;
 @property LSICalculator *calculator;
 
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
 @end
 
 @implementation LSICalculatorViewController
@@ -37,7 +39,18 @@
     [self.digitAccumulator addDigitWithNumericValue:1];
     [self.digitAccumulator addDigitWithNumericValue:4];
     
-    printf("Number: %0.2f", [self.digitAccumulator value]);    
+    printf("Number: %f", [self.digitAccumulator value]);
+    
+    [self updateViews];
+}
+
+- (void)updateViews{
+    [self.textField setText:[self.digitAccumulator valueString]];
+}
+
+- (IBAction)enterNumericDigit:(UIButton *)sender {
+    [self.digitAccumulator addDigitWithNumericValue:(int)[sender tag]];
+    [self updateViews];
 }
 
 @end
