@@ -51,11 +51,19 @@
 			isa = PBXGroup;
 			children = (
 				8005E19D23A2D7D000950329 /* RPNLogic.h */,
-				8005E1AF23A2DAAF00950329 /* JLRStack.h */,
-				8005E1B023A2DAAF00950329 /* JLRStack.m */,
+				8005E1B323A2DAD300950329 /* Stack */,
 				8005E19E23A2D7D000950329 /* Info.plist */,
 			);
 			path = RPNLogic;
+			sourceTree = "<group>";
+		};
+		8005E1B323A2DAD300950329 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				8005E1AF23A2DAAF00950329 /* JLRStack.h */,
+				8005E1B023A2DAAF00950329 /* JLRStack.m */,
+			);
+			path = Stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

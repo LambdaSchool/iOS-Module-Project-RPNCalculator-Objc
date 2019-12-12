@@ -10,7 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JLRStack : NSObject
+@interface JLRStack<ObjectType> : NSObject
+
+- (instancetype)initWithArray:(NSArray *)array;
+
+- (void)push:(ObjectType)value;
+- (void)pop:(ObjectType)value;
+- (void)peek:(ObjectType)value;
 
 @end
 
