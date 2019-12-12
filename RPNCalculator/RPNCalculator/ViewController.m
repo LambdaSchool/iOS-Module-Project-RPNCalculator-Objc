@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <RPNLogic/RPNLogic.h>
 
 @interface ViewController ()
 

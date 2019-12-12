@@ -14,7 +14,33 @@
 		8005E18223A2D02500950329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8005E18123A2D02500950329 /* Assets.xcassets */; };
 		8005E18523A2D02500950329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8005E18323A2D02500950329 /* LaunchScreen.storyboard */; };
 		8005E18823A2D02500950329 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8005E18723A2D02500950329 /* main.m */; };
+		8005E1AC23A2D9C900950329 /* RPNLogic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8005E1AB23A2D93C00950329 /* RPNLogic.framework */; };
+		8005E1AD23A2D9C900950329 /* RPNLogic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8005E1AB23A2D93C00950329 /* RPNLogic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8005E1AA23A2D93C00950329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8005E1A623A2D93C00950329 /* RPNLogic.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8005E19A23A2D7D000950329;
+			remoteInfo = RPNLogic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8005E1AE23A2D9C900950329 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8005E1AD23A2D9C900950329 /* RPNLogic.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8005E17223A2D02100950329 /* RPNCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPNCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +55,7 @@
 		8005E18423A2D02500950329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8005E18623A2D02500950329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8005E18723A2D02500950329 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8005E1A623A2D93C00950329 /* RPNLogic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RPNLogic.xcodeproj; path = ../RPNLogic/RPNLogic.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8005E1AC23A2D9C900950329 /* RPNLogic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				8005E17423A2D02100950329 /* RPNCalculator */,
+				8005E1A523A2D91500950329 /* Frameworks */,
 				8005E17323A2D02100950329 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +105,22 @@
 			path = RPNCalculator;
 			sourceTree = "<group>";
 		};
+		8005E1A523A2D91500950329 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8005E1A623A2D93C00950329 /* RPNLogic.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8005E1A723A2D93C00950329 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8005E1AB23A2D93C00950329 /* RPNLogic.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,6 +131,7 @@
 				8005E16E23A2D02100950329 /* Sources */,
 				8005E16F23A2D02100950329 /* Frameworks */,
 				8005E17023A2D02100950329 /* Resources */,
+				8005E1AE23A2D9C900950329 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,12 +167,28 @@
 			mainGroup = 8005E16923A2D02100950329;
 			productRefGroup = 8005E17323A2D02100950329 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8005E1A723A2D93C00950329 /* Products */;
+					ProjectRef = 8005E1A623A2D93C00950329 /* RPNLogic.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8005E17123A2D02100950329 /* RPNCalculator */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8005E1AB23A2D93C00950329 /* RPNLogic.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RPNLogic.framework;
+			remoteRef = 8005E1AA23A2D93C00950329 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8005E17023A2D02100950329 /* Resources */ = {
