@@ -16,6 +16,7 @@
 		A639F2B723A2DC7D000B9A59 /* GIPStack.m in Sources */ = {isa = PBXBuildFile; fileRef = A639F2B623A2DC7D000B9A59 /* GIPStack.m */; };
 		A639F2BA23A2E9E1000B9A59 /* GIPCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = A639F2B923A2E9E1000B9A59 /* GIPCalculator.m */; };
 		A639F2BD23A2F296000B9A59 /* GIPDigitAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A639F2BC23A2F296000B9A59 /* GIPDigitAccumulator.m */; };
+		A639F2C023A2F809000B9A59 /* GIPCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A639F2BF23A2F809000B9A59 /* GIPCalculatorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		A639F2B923A2E9E1000B9A59 /* GIPCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPCalculator.m; sourceTree = "<group>"; };
 		A639F2BB23A2F296000B9A59 /* GIPDigitAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIPDigitAccumulator.h; sourceTree = "<group>"; };
 		A639F2BC23A2F296000B9A59 /* GIPDigitAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPDigitAccumulator.m; sourceTree = "<group>"; };
+		A639F2BE23A2F809000B9A59 /* GIPCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIPCalculatorViewController.h; sourceTree = "<group>"; };
+		A639F2BF23A2F809000B9A59 /* GIPCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPCalculatorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				A639F2B923A2E9E1000B9A59 /* GIPCalculator.m */,
 				A639F2BB23A2F296000B9A59 /* GIPDigitAccumulator.h */,
 				A639F2BC23A2F296000B9A59 /* GIPDigitAccumulator.m */,
+				A639F2BE23A2F809000B9A59 /* GIPCalculatorViewController.h */,
+				A639F2BF23A2F809000B9A59 /* GIPCalculatorViewController.m */,
 			);
 			path = "RPNCalculator-objc";
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 				A639F2BD23A2F296000B9A59 /* GIPDigitAccumulator.m in Sources */,
 				A639F2BA23A2E9E1000B9A59 /* GIPCalculator.m in Sources */,
 				A639F2AF23A2D954000B9A59 /* main.m in Sources */,
+				A639F2C023A2F809000B9A59 /* GIPCalculatorViewController.m in Sources */,
 				A639F2A123A2D953000B9A59 /* SceneDelegate.m in Sources */,
 				A639F2B723A2DC7D000B9A59 /* GIPStack.m in Sources */,
 			);
