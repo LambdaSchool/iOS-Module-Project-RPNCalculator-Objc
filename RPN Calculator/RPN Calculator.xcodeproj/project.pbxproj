@@ -15,6 +15,7 @@
 		596F978623A2E06800E229EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 596F978523A2E06800E229EC /* main.m */; };
 		596F978E23A2E1BD00E229EC /* LSICalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596F978D23A2E1BD00E229EC /* LSICalculatorViewController.m */; };
 		596F979123A2E25C00E229EC /* LSIStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 596F979023A2E25C00E229EC /* LSIStack.m */; };
+		596F979423A2E51100E229EC /* LSICalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 596F979323A2E51100E229EC /* LSICalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		596F978D23A2E1BD00E229EC /* LSICalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSICalculatorViewController.m; sourceTree = "<group>"; };
 		596F978F23A2E25C00E229EC /* LSIStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIStack.h; sourceTree = "<group>"; };
 		596F979023A2E25C00E229EC /* LSIStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIStack.m; sourceTree = "<group>"; };
+		596F979223A2E51100E229EC /* LSICalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSICalculator.h; sourceTree = "<group>"; };
+		596F979323A2E51100E229EC /* LSICalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSICalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				596F978D23A2E1BD00E229EC /* LSICalculatorViewController.m */,
 				596F978F23A2E25C00E229EC /* LSIStack.h */,
 				596F979023A2E25C00E229EC /* LSIStack.m */,
+				596F979223A2E51100E229EC /* LSICalculator.h */,
+				596F979323A2E51100E229EC /* LSICalculator.m */,
 				596F977C23A2E06700E229EC /* Main.storyboard */,
 				596F977F23A2E06800E229EC /* Assets.xcassets */,
 				596F978123A2E06800E229EC /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 			files = (
 				596F977523A2E06700E229EC /* AppDelegate.m in Sources */,
 				596F979123A2E25C00E229EC /* LSIStack.m in Sources */,
+				596F979423A2E51100E229EC /* LSICalculator.m in Sources */,
 				596F978E23A2E1BD00E229EC /* LSICalculatorViewController.m in Sources */,
 				596F978623A2E06800E229EC /* main.m in Sources */,
 				596F977823A2E06700E229EC /* SceneDelegate.m in Sources */,
