@@ -16,27 +16,33 @@
 
 @implementation JLRStack
 
+- (instancetype)init {
+    return [self initWithArray:@[]];
+}
+
 - (instancetype)initWithArray:(NSArray *)array {
     self = [super init];
     if (self) {
-        _values = [[NSMutableArray alloc] init];
+        _values = [array mutableCopy];
     }
     return self;
 }
 
-
-- (void)push:(id)value {
-    [self.values addObject:value];
+- (void)push:(double)value {
+    [self.values addObject:@(value)];
 }
 
 
-- (void)pop:(id)value {
+- (double)pop {
+    if ([self.values count] < 1) { return 0;}
+    double result = [[self.values lastObject] doubleValue];
     [self.values removeLastObject];
+    return result;
 }
 
 
-- (void)peek:(id)value {
-    [self.values lastObject];
+- (double)peek {
+    return [[self.values lastObject] doubleValue];
 }
 
 
