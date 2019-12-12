@@ -30,6 +30,10 @@
     [self.stack push:value];
 }
 
+- (double)topValue {
+    return [self.stack peek];
+}
+
 - (void)applyOperator:(operation)operator {
     double num1 = [self.stack pop];
     double num2 = [self.stack pop];

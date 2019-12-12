@@ -12,7 +12,7 @@
 
 typedef NS_ENUM(char, operation) {add, subtract, multiply, divide};
 
-@property (readonly) NSNumber *topValue;
+@property (readonly) double topValue;
 
 - (void)pushNumber:(double)value;
 - (void)applyOperator:(operation)operator;
