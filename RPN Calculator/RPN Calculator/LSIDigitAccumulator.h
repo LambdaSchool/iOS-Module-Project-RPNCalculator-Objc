@@ -11,6 +11,7 @@
 @interface LSIDigitAccumulator : NSObject
 
 @property (readonly) double value;
+@property (readonly) NSString *valueString;
 
 - (void)addDigitWithNumericValue:(int)value;
 - (void)addDecimalPoint;

@@ -26,6 +26,13 @@
 }
 
 - (double)value {
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    
+    return [[formatter numberFromString:[self valueString]] doubleValue];
+}
+
+- (NSString *)valueString {
     NSString *string = [[NSString alloc] init];
     
     for (NSNumber *num in self.number) {
@@ -37,9 +44,7 @@
         }
     }
     
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
-    return [[formatter numberFromString:string] doubleValue];
+    return string;
 }
 
 - (void)addDigitWithNumericValue:(int)value {
