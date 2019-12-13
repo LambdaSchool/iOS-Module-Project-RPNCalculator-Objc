@@ -17,6 +17,14 @@
 
 @implementation JLRCalculator
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _stack = [[JLRStack alloc] initWithArray:@[]];
+    }
+    return self;
+}
+
 - (void)pushNumber:(double)value {
     [self.stack push:value];
 }
@@ -31,13 +39,15 @@
     switch (operator) {
         case kAddition:
             result = num1 + num2;
+            break;
         case kSubtraction:
             result = num1 - num2;
+            break;
         case kMultiplication:
             result = num1 * num2;
+            break;
         case kDivision:
             result = num1 / num2;
-        default:
             break;
     }
     [self.stack push:result];

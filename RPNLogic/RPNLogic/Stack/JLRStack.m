@@ -10,7 +10,7 @@
 
 @interface JLRStack()
 
-@property (nonatomic, strong) NSMutableArray<id> *values;
+@property NSMutableArray *values;
 
 @end
 

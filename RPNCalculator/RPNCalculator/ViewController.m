@@ -11,13 +11,15 @@
 
 @interface ViewController ()
 
+// MARK: - Outlets
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 

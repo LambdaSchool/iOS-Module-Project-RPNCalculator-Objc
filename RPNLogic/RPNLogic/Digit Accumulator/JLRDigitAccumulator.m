@@ -9,10 +9,26 @@
 #import "JLRDigitAccumulator.h"
 #import "JLRStack.h"
 
+@interface JLRDigitAccumulator ()
+
+@property NSMutableString *digit;
+
+@end
+
 @implementation JLRDigitAccumulator
 
-- (void)addDigitWithNumericValue {
-    
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _digit = [[NSMutableString alloc] init];
+    }
+    return self;
+}
+
+- (void)addDigitWithNumericValue:(double)value {
+    if (value >= 0 && value <= 9) {
+        [self.digit appendFormat:@"%f", (value)];
+    }
 }
 
 
@@ -22,8 +38,11 @@
 
 
 - (void)clear {
-    
+    self.digit = [NSMutableString stringWithString:@""];
 }
 
+- (double)value {
+    return [self.digit doubleValue];
+}
 
 @end

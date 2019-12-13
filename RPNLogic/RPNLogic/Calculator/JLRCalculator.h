@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JLRCalculator : NSObject
 
-typedef NS_ENUM(NSUInteger, operators) {
+typedef NS_ENUM(char, operators) {
     kAddition,
     kSubtraction,
     kMultiplication,

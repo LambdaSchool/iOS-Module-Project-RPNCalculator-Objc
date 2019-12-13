@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JLRDigitAccumulator : NSObject
 
-@property (readonly) double *value;
+@property (readonly) double value;
 
-- (void)addDigitWithNumericValue;
+- (void)addDigitWithNumericValue:(double)value;
 - (void)addDecimalPoint;
 - (void)clear;
 
