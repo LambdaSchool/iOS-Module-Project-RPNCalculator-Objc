@@ -16,27 +16,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="InY-0Y-mbV">
-                                <rect key="frame" x="20" y="64" width="374" height="341"/>
+                                <rect key="frame" x="20" y="64" width="374" height="345"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ENY-r0-rPh">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="49"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hXe-aG-vZH">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="53"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kqk-sw-FdX">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="49"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ENY-r0-rPh">
+                                                <rect key="frame" x="0.0" y="0.0" width="324" height="53"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kqk-sw-FdX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="324" height="53"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lL-dg-AYl">
+                                                <rect key="frame" x="344" y="0.0" width="30" height="53"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
+                                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="C"/>
+                                                <connections>
+                                                    <action selector="clearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEN-pA-8Fj"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="yBu-Zc-kUP">
-                                        <rect key="frame" x="0.0" y="69" width="374" height="53"/>
+                                        <rect key="frame" x="0.0" y="73" width="374" height="53"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sO-GU-yF6">
                                                 <rect key="frame" x="0.0" y="0.0" width="63.5" height="53"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="1"/>
                                                 <connections>
-                                                    <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkI-F8-3bD"/>
+                                                    <action selector="numericDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkI-F8-3bD"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yi2-ib-YZq">
@@ -44,7 +58,7 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="2"/>
                                                 <connections>
-                                                    <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zDE-Yh-zXw"/>
+                                                    <action selector="numericDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zDE-Yh-zXw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUn-Kj-qGw">
@@ -52,7 +66,7 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="3"/>
                                                 <connections>
-                                                    <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JWv-pi-YAr"/>
+                                                    <action selector="numericDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JWv-pi-YAr"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sai-lL-Hvg">
@@ -60,7 +74,7 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="+"/>
                                                 <connections>
-                                                    <action selector="calculateWithOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UMh-3J-eix"/>
+                                                    <action selector="operatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UMh-3J-eix"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -71,14 +85,14 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="BhU-3t-f2j">
-                                        <rect key="frame" x="0.0" y="142" width="374" height="53"/>
+                                        <rect key="frame" x="0.0" y="146" width="374" height="53"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8I0-qK-lLu">
                                                 <rect key="frame" x="0.0" y="0.0" width="63.5" height="53"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="4"/>
                                                 <connections>
-                                                    <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TQX-oV-tdd"/>
+                                                    <action selector="numericDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TQX-oV-tdd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGJ-jB-RJm">
@@ -86,7 +100,7 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="5"/>
                                                 <connections>
-                                                    <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rRn-RQ-hOr"/>
+                                                    <action selector="numericDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rRn-RQ-hOr"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMC-ZA-GnT">
@@ -94,28 +108,28 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="6"/>
                                                 <connections>
-                                                    <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="icD-B5-EfJ"/>
+                                                    <action selector="numericDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="icD-B5-EfJ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmh-li-wa8">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmh-li-wa8">
                                                 <rect key="frame" x="310.5" y="0.0" width="63.5" height="53"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="–"/>
                                                 <connections>
-                                                    <action selector="calculateWithOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfk-zc-bEM"/>
+                                                    <action selector="operatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfk-zc-bEM"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="lhg-kI-5df">
-                                        <rect key="frame" x="0.0" y="215" width="374" height="53"/>
+                                        <rect key="frame" x="0.0" y="219" width="374" height="53"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXS-ag-gjy">
                                                 <rect key="frame" x="0.0" y="0.0" width="63.5" height="53"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="7"/>
                                                 <connections>
-                                                    <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yca-gX-Kp4"/>
+                                                    <action selector="numericDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yca-gX-Kp4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC3-Xw-Ub1">
@@ -123,7 +137,7 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="8"/>
                                                 <connections>
-                                                    <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W3Z-ma-uPH"/>
+                                                    <action selector="numericDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W3Z-ma-uPH"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crf-RI-JaQ">
@@ -131,28 +145,28 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="9"/>
                                                 <connections>
-                                                    <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yPf-ay-zxt"/>
+                                                    <action selector="numericDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yPf-ay-zxt"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzA-sH-ZOV">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzA-sH-ZOV">
                                                 <rect key="frame" x="310.5" y="0.0" width="63.5" height="53"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="×"/>
                                                 <connections>
-                                                    <action selector="calculateWithOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enG-bN-oie"/>
+                                                    <action selector="operatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enG-bN-oie"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Cvn-wo-WYh">
-                                        <rect key="frame" x="0.0" y="288" width="374" height="53"/>
+                                        <rect key="frame" x="0.0" y="292" width="374" height="53"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2St-ZA-wxq">
                                                 <rect key="frame" x="0.0" y="0.0" width="63.5" height="53"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="."/>
                                                 <connections>
-                                                    <action selector="enterDecimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iep-hS-reW"/>
+                                                    <action selector="decimalPointTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iep-hS-reW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSI-oP-zPK">
@@ -160,7 +174,7 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="0"/>
                                                 <connections>
-                                                    <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t59-oO-Odb"/>
+                                                    <action selector="numericDigitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t59-oO-Odb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXt-El-FFg">
@@ -168,15 +182,15 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="⏎"/>
                                                 <connections>
-                                                    <action selector="pushNumberToStack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mVE-6b-NCP"/>
+                                                    <action selector="returnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mVE-6b-NCP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyy-vl-dmN">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyy-vl-dmN">
                                                 <rect key="frame" x="310.5" y="0.0" width="63.5" height="53"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <state key="normal" title="÷"/>
                                                 <connections>
-                                                    <action selector="calculateWithOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u0U-cV-dvD"/>
+                                                    <action selector="operatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u0U-cV-dvD"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -192,6 +206,7 @@
                                     <constraint firstItem="Hyy-vl-dmN" firstAttribute="width" secondItem="2sO-GU-yF6" secondAttribute="width" id="YjS-dh-5g9"/>
                                     <constraint firstItem="zMC-ZA-GnT" firstAttribute="width" secondItem="2sO-GU-yF6" secondAttribute="width" id="c4W-xs-luo"/>
                                     <constraint firstItem="JXt-El-FFg" firstAttribute="width" secondItem="2sO-GU-yF6" secondAttribute="width" id="dLt-vI-Esu"/>
+                                    <constraint firstItem="4lL-dg-AYl" firstAttribute="width" secondItem="2sO-GU-yF6" secondAttribute="width" multiplier="0.472441" id="hwq-iK-fTH"/>
                                     <constraint firstItem="2St-ZA-wxq" firstAttribute="width" secondItem="2sO-GU-yF6" secondAttribute="width" id="j25-aC-5gJ"/>
                                     <constraint firstItem="lC3-Xw-Ub1" firstAttribute="width" secondItem="2sO-GU-yF6" secondAttribute="width" id="qD5-GC-96J"/>
                                     <constraint firstItem="qzA-sH-ZOV" firstAttribute="width" secondItem="2sO-GU-yF6" secondAttribute="width" id="xRK-lb-Pvh"/>

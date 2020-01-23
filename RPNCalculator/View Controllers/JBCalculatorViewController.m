@@ -13,7 +13,7 @@
 
 #pragma mark - Private Declarations
 
-@interface JBCalculatorViewController () <UITextFieldDelegate> {
+@interface JBCalculatorViewController () {
     NSNumberFormatter *_numberFormatter;
 }
 
@@ -24,11 +24,13 @@
 
 @property (nonatomic, readonly) NSNumberFormatter *numberFormatter;
 
-- (IBAction)enterNumericDigit:(UIButton *)sender;
-- (IBAction)enterDecimal:(UIButton *)sender;
-- (IBAction)pushNumberToStack:(UIButton *)sender;
-- (IBAction)calculateWithOperator:(UIButton *)sender;
+- (IBAction)numericDigitTapped:(UIButton *)sender;
+- (IBAction)decimalPointTapped:(UIButton *)sender;
+- (IBAction)returnTapped:(UIButton *)sender;
+- (IBAction)operatorTapped:(UIButton *)sender;
 
+- (void)addDigitToAccumulator:(NSUInteger)digit;
+- (void)pushDisplayedValueToStack;
 - (void)setDisplayTextFromBrain:(BOOL)willSetFromBrainNotAccumulator;
 
 @end
@@ -45,19 +47,26 @@
     {
         _brain = [[JBCalculator alloc] init];
         _digitAccumulator = [[JBDigitAccumulator alloc] init];
-
-        self.mainTextField.delegate = self;
     }
     return self;
 }
 
--(NSNumberFormatter *)numberFormatter
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    [self setDisplayTextFromBrain:NO];
+}
+
+- (NSNumberFormatter *)numberFormatter
 {
     if (_numberFormatter == nil)
     {
         _numberFormatter = [[NSNumberFormatter alloc] init];
         _numberFormatter.allowsFloats = true;
         _numberFormatter.minimumFractionDigits = 0;
+        _numberFormatter.maximumSignificantDigits = 20;
+        _numberFormatter.maximumFractionDigits = 20;
         _numberFormatter.maximumIntegerDigits = 20;
     }
     return _numberFormatter;
@@ -65,31 +74,59 @@
 
 # pragma mark - Actions
 
-- (IBAction)enterNumericDigit:(UIButton *)sender
+- (IBAction)numericDigitTapped:(UIButton *)sender
 {
-    [self.digitAccumulator addDigitWithNumericValue:sender.tag];
+    [self addDigitToAccumulator:sender.tag];
+}
+
+- (IBAction)decimalPointTapped:(UIButton *)sender
+{
+    [self addDecimalPointToStack];
+}
+
+- (IBAction)returnTapped:(UIButton *)sender
+{
+    [self pushDisplayedValueToStack];
+}
+
+- (IBAction)operatorTapped:(UIButton *)sender
+{
+    [self calculateWithOperator:(JBOperator)sender.tag];
+}
+
+- (IBAction)clearButtonTapped:(id)sender
+{
+    [self clearAll];
+}
+
+# pragma mark - Private
+
+- (void)addDigitToAccumulator:(NSUInteger)digit
+{
+    [self.digitAccumulator addDigitWithNumericValue:digit];
     [self setDisplayTextFromBrain:NO];
 }
 
-- (IBAction)enterDecimal:(UIButton *)sender
+- (void)addDecimalPointToStack
 {
     [self.digitAccumulator addDecimalPoint];
     [self setDisplayTextFromBrain:NO];
 }
 
-- (IBAction)pushNumberToStack:(UIButton *)sender
+- (void)pushDisplayedValueToStack
 {
-    double value = self.digitAccumulator.value;
-    if (value) {
-        [self.brain pushNumber:value];
+    if (self.digitAccumulator.value)
+    {
+        [self.brain pushNumber:self.digitAccumulator.value];
         [self.digitAccumulator clear];
         [self setDisplayTextFromBrain:NO];
     }
 }
 
-- (IBAction)calculateWithOperator:(UIButton *)sender
+- (void)calculateWithOperator:(JBOperator)operator
 {
-    [self.brain applyOperator:(JBOperator)sender.tag];
+    [self pushDisplayedValueToStack];
+    [self.brain applyOperator:operator];
     [self setDisplayTextFromBrain:YES];
 }
 
@@ -99,14 +136,11 @@
     self.mainTextField.text = [self.numberFormatter stringFromNumber:[NSNumber numberWithDouble:valueToSet]];
 }
 
-# pragma mark - Text Field Delegate
-
-- (BOOL)textFieldShouldClear:(UITextField *)textField
+- (void)clearAll
 {
     [self.brain clear];
     [self.digitAccumulator clear];
-
-    return true;
+    [self setDisplayTextFromBrain:NO];
 }
 
 @end
