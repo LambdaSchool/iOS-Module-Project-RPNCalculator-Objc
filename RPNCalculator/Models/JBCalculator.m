@@ -9,11 +9,21 @@
 #import "JBCalculator.h"
 
 
-typedef NS_ENUM(NSInteger, JBOperator) {
-    add, subtract, multiply, divide
-};
-
-
 @implementation JBCalculator
+
+- (void)pushNumber:(double)value
+{
+
+}
+
+- (void)applyOperator:(JBOperator)operator
+{
+
+}
+
+- (void)clear
+{
+
+}
 
 @end

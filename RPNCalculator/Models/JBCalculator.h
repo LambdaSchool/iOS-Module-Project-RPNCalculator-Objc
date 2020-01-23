@@ -8,10 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
+
+typedef NS_ENUM(NSUInteger, JBOperator) {
+    jbAdd,
+    jbSubtract,
+    jbMultiply,
+    jbDivide
+};
+
 
 @interface JBCalculator : NSObject
 
-@end
+- (void)pushNumber:(double)value;
+- (void)applyOperator:(JBOperator)operator;
+- (void)clear;
 
-NS_ASSUME_NONNULL_END
+@end
