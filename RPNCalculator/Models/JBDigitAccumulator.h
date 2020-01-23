@@ -13,7 +13,7 @@
 
 @property (nonatomic, readonly) double value;
 
-- (void)addDigitWithNumericValue:(double)value;
+- (void)addDigitWithNumericValue:(NSUInteger)value;
 - (void)addDecimalPoint;
 - (void)clear;
 

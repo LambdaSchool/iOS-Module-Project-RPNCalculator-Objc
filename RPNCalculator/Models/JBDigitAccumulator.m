@@ -27,9 +27,9 @@
     return self;
 }
 
-- (void)addDigitWithNumericValue:(double)value
+- (void)addDigitWithNumericValue:(NSUInteger)value
 {
-    [self.stringValue appendFormat:@"%f", value];
+    [self.stringValue appendFormat:@"%lu", (unsigned long)value];
 }
 
 - (void)addDecimalPoint
