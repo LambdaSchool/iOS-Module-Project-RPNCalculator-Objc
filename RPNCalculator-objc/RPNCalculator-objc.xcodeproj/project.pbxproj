@@ -14,6 +14,7 @@
 		BBBCEC7823DA379400506CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEC7623DA379400506CAF /* LaunchScreen.storyboard */; };
 		BBBCEC7B23DA379400506CAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC7A23DA379400506CAF /* main.m */; };
 		BBBCEC8323DA38F400506CAF /* SKSCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC8223DA38F400506CAF /* SKSCalculatorViewController.m */; };
+		BBBCEC8623DA3A2900506CAF /* SKSStack.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC8523DA3A2900506CAF /* SKSStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		BBBCEC7A23DA379400506CAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBBCEC8123DA38F400506CAF /* SKSCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSCalculatorViewController.h; sourceTree = "<group>"; };
 		BBBCEC8223DA38F400506CAF /* SKSCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSCalculatorViewController.m; sourceTree = "<group>"; };
+		BBBCEC8423DA3A2900506CAF /* SKSStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSStack.h; sourceTree = "<group>"; };
+		BBBCEC8523DA3A2900506CAF /* SKSStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				BBBCEC6C23DA379000506CAF /* SceneDelegate.m */,
 				BBBCEC8123DA38F400506CAF /* SKSCalculatorViewController.h */,
 				BBBCEC8223DA38F400506CAF /* SKSCalculatorViewController.m */,
+				BBBCEC8423DA3A2900506CAF /* SKSStack.h */,
+				BBBCEC8523DA3A2900506CAF /* SKSStack.m */,
 				BBBCEC7123DA379000506CAF /* Main.storyboard */,
 				BBBCEC7423DA379400506CAF /* Assets.xcassets */,
 				BBBCEC7623DA379400506CAF /* LaunchScreen.storyboard */,
@@ -151,6 +156,7 @@
 				BBBCEC7B23DA379400506CAF /* main.m in Sources */,
 				BBBCEC8323DA38F400506CAF /* SKSCalculatorViewController.m in Sources */,
 				BBBCEC6D23DA379000506CAF /* SceneDelegate.m in Sources */,
+				BBBCEC8623DA3A2900506CAF /* SKSStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
