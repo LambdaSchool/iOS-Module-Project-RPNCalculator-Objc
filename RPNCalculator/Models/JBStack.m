@@ -8,37 +8,47 @@
 
 #import "JBStack.h"
 
+
+@interface JBStack()
+
+@property (nonatomic) NSMutableArray *stack;
+
+@end
+
+
 @implementation JBStack
 
 - (instancetype)initWithArray:(NSArray *)array
 {
     self = [super init];
     if (self) {
-
+        _stack = [array mutableCopy];
     }
     return self;
 }
 
+#pragma mark - Public API
+
 - (void)push:(id)newElement
 {
-
+    [self.stack addObject:newElement];
 }
 
 - (id)pop
 {
-
-    return nil;
+    id lastObject = self.stack.lastObject;
+    [self.stack removeLastObject];
+    return lastObject;
 }
 
 - (id)peek
 {
-
-    return nil;
+    return self.stack.lastObject;
 }
 
 - (void)clear
 {
-
+    self.stack = [[NSMutableArray alloc] init];
 }
 
 @end
