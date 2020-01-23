@@ -16,6 +16,7 @@
 		BBBCEC8323DA38F400506CAF /* SKSCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC8223DA38F400506CAF /* SKSCalculatorViewController.m */; };
 		BBBCEC8623DA3A2900506CAF /* SKSStack.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC8523DA3A2900506CAF /* SKSStack.m */; };
 		BBBCEC8923DA3CE900506CAF /* SKSCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC8823DA3CE900506CAF /* SKSCalculator.m */; };
+		BBBCEC8C23DA44D600506CAF /* SKSDigitAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC8B23DA44D600506CAF /* SKSDigitAccumulator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		BBBCEC8523DA3A2900506CAF /* SKSStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSStack.m; sourceTree = "<group>"; };
 		BBBCEC8723DA3CE900506CAF /* SKSCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSCalculator.h; sourceTree = "<group>"; };
 		BBBCEC8823DA3CE900506CAF /* SKSCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSCalculator.m; sourceTree = "<group>"; };
+		BBBCEC8A23DA44D600506CAF /* SKSDigitAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSDigitAccumulator.h; sourceTree = "<group>"; };
+		BBBCEC8B23DA44D600506CAF /* SKSDigitAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDigitAccumulator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				BBBCEC8523DA3A2900506CAF /* SKSStack.m */,
 				BBBCEC8723DA3CE900506CAF /* SKSCalculator.h */,
 				BBBCEC8823DA3CE900506CAF /* SKSCalculator.m */,
+				BBBCEC8A23DA44D600506CAF /* SKSDigitAccumulator.h */,
+				BBBCEC8B23DA44D600506CAF /* SKSDigitAccumulator.m */,
 				BBBCEC7123DA379000506CAF /* Main.storyboard */,
 				BBBCEC7423DA379400506CAF /* Assets.xcassets */,
 				BBBCEC7623DA379400506CAF /* LaunchScreen.storyboard */,
@@ -160,6 +165,7 @@
 				BBBCEC6A23DA379000506CAF /* AppDelegate.m in Sources */,
 				BBBCEC7B23DA379400506CAF /* main.m in Sources */,
 				BBBCEC8323DA38F400506CAF /* SKSCalculatorViewController.m in Sources */,
+				BBBCEC8C23DA44D600506CAF /* SKSDigitAccumulator.m in Sources */,
 				BBBCEC6D23DA379000506CAF /* SceneDelegate.m in Sources */,
 				BBBCEC8623DA3A2900506CAF /* SKSStack.m in Sources */,
 				BBBCEC8923DA3CE900506CAF /* SKSCalculator.m in Sources */,
