@@ -11,7 +11,9 @@
 #import "JBDigitAccumulator.h"
 
 
-@interface JBCalculatorViewController () {
+#pragma mark - Private Declarations
+
+@interface JBCalculatorViewController () <UITextFieldDelegate> {
     NSNumberFormatter *_numberFormatter;
 }
 
@@ -27,11 +29,14 @@
 - (IBAction)pushNumberToStack:(UIButton *)sender;
 - (IBAction)calculateWithOperator:(UIButton *)sender;
 
+- (void)setDisplayTextFromBrain:(BOOL)willSetFromBrainNotAccumulator;
 
 @end
 
 
 @implementation JBCalculatorViewController
+
+#pragma mark - Init/Setup
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
@@ -40,6 +45,8 @@
     {
         _brain = [[JBCalculator alloc] init];
         _digitAccumulator = [[JBDigitAccumulator alloc] init];
+
+        self.mainTextField.delegate = self;
     }
     return self;
 }
@@ -56,16 +63,50 @@
     return _numberFormatter;
 }
 
-- (IBAction)enterNumericDigit:(UIButton *)sender {
+# pragma mark - Actions
+
+- (IBAction)enterNumericDigit:(UIButton *)sender
+{
+    [self.digitAccumulator addDigitWithNumericValue:sender.tag];
+    [self setDisplayTextFromBrain:NO];
 }
 
-- (IBAction)enterDecimal:(UIButton *)sender {
+- (IBAction)enterDecimal:(UIButton *)sender
+{
+    [self.digitAccumulator addDecimalPoint];
+    [self setDisplayTextFromBrain:NO];
 }
 
-- (IBAction)pushNumberToStack:(UIButton *)sender {
+- (IBAction)pushNumberToStack:(UIButton *)sender
+{
+    double value = self.digitAccumulator.value;
+    if (value) {
+        [self.brain pushNumber:value];
+        [self.digitAccumulator clear];
+        [self setDisplayTextFromBrain:NO];
+    }
 }
 
-- (IBAction)calculateWithOperator:(UIButton *)sender {
+- (IBAction)calculateWithOperator:(UIButton *)sender
+{
+    [self.brain applyOperator:(JBOperator)sender.tag];
+    [self setDisplayTextFromBrain:YES];
+}
+
+- (void)setDisplayTextFromBrain:(BOOL)willSetFromBrainNotAccumulator
+{
+    double valueToSet = willSetFromBrainNotAccumulator ? self.brain.topValue : self.digitAccumulator.value;
+    self.mainTextField.text = [self.numberFormatter stringFromNumber:[NSNumber numberWithDouble:valueToSet]];
+}
+
+# pragma mark - Text Field Delegate
+
+- (BOOL)textFieldShouldClear:(UITextField *)textField
+{
+    [self.brain clear];
+    [self.digitAccumulator clear];
+
+    return true;
 }
 
 @end
