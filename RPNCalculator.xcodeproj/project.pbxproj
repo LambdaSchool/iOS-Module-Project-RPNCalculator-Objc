@@ -15,6 +15,7 @@
 		9967737123D9FDCB00C4BCE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967737023D9FDCB00C4BCE6 /* main.m */; };
 		996773BB23DA381D00C4BCE6 /* JBCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996773BA23DA381D00C4BCE6 /* JBCalculatorViewController.m */; };
 		996773BE23DA38D900C4BCE6 /* JBStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 996773BD23DA38D900C4BCE6 /* JBStack.m */; };
+		996773C123DA3BC200C4BCE6 /* JBCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 996773C023DA3BC200C4BCE6 /* JBCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		996773BA23DA381D00C4BCE6 /* JBCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBCalculatorViewController.m; sourceTree = "<group>"; };
 		996773BC23DA38D900C4BCE6 /* JBStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBStack.h; sourceTree = "<group>"; };
 		996773BD23DA38D900C4BCE6 /* JBStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBStack.m; sourceTree = "<group>"; };
+		996773BF23DA3BC200C4BCE6 /* JBCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBCalculator.h; sourceTree = "<group>"; };
+		996773C023DA3BC200C4BCE6 /* JBCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 			children = (
 				996773BC23DA38D900C4BCE6 /* JBStack.h */,
 				996773BD23DA38D900C4BCE6 /* JBStack.m */,
+				996773BF23DA3BC200C4BCE6 /* JBCalculator.h */,
+				996773C023DA3BC200C4BCE6 /* JBCalculator.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				996773BB23DA381D00C4BCE6 /* JBCalculatorViewController.m in Sources */,
+				996773C123DA3BC200C4BCE6 /* JBCalculator.m in Sources */,
 				9967736023D9FDC800C4BCE6 /* AppDelegate.m in Sources */,
 				9967737123D9FDCB00C4BCE6 /* main.m in Sources */,
 				996773BE23DA38D900C4BCE6 /* JBStack.m in Sources */,
