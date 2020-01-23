@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		9967736023D9FDC800C4BCE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967735F23D9FDC800C4BCE6 /* AppDelegate.m */; };
 		9967736323D9FDC800C4BCE6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967736223D9FDC800C4BCE6 /* SceneDelegate.m */; };
-		9967736623D9FDC800C4BCE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967736523D9FDC800C4BCE6 /* ViewController.m */; };
 		9967736923D9FDC800C4BCE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9967736723D9FDC800C4BCE6 /* Main.storyboard */; };
 		9967736B23D9FDCB00C4BCE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9967736A23D9FDCB00C4BCE6 /* Assets.xcassets */; };
 		9967736E23D9FDCB00C4BCE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9967736C23D9FDCB00C4BCE6 /* LaunchScreen.storyboard */; };
 		9967737123D9FDCB00C4BCE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967737023D9FDCB00C4BCE6 /* main.m */; };
+		996773BB23DA381D00C4BCE6 /* JBCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996773BA23DA381D00C4BCE6 /* JBCalculatorViewController.m */; };
+		996773BE23DA38D900C4BCE6 /* JBStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 996773BD23DA38D900C4BCE6 /* JBStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +23,15 @@
 		9967735F23D9FDC800C4BCE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9967736123D9FDC800C4BCE6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		9967736223D9FDC800C4BCE6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		9967736423D9FDC800C4BCE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9967736523D9FDC800C4BCE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9967736823D9FDC800C4BCE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9967736A23D9FDCB00C4BCE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9967736D23D9FDCB00C4BCE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9967736F23D9FDCB00C4BCE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9967737023D9FDCB00C4BCE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		996773B923DA381D00C4BCE6 /* JBCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBCalculatorViewController.h; sourceTree = "<group>"; };
+		996773BA23DA381D00C4BCE6 /* JBCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBCalculatorViewController.m; sourceTree = "<group>"; };
+		996773BC23DA38D900C4BCE6 /* JBStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBStack.h; sourceTree = "<group>"; };
+		996773BD23DA38D900C4BCE6 /* JBStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +107,8 @@
 		996773B523DA304000C4BCE6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9967736423D9FDC800C4BCE6 /* ViewController.h */,
-				9967736523D9FDC800C4BCE6 /* ViewController.m */,
+				996773B923DA381D00C4BCE6 /* JBCalculatorViewController.h */,
+				996773BA23DA381D00C4BCE6 /* JBCalculatorViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -113,6 +116,8 @@
 		996773B623DA304700C4BCE6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				996773BC23DA38D900C4BCE6 /* JBStack.h */,
+				996773BD23DA38D900C4BCE6 /* JBStack.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,9 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9967736623D9FDC800C4BCE6 /* ViewController.m in Sources */,
+				996773BB23DA381D00C4BCE6 /* JBCalculatorViewController.m in Sources */,
 				9967736023D9FDC800C4BCE6 /* AppDelegate.m in Sources */,
 				9967737123D9FDCB00C4BCE6 /* main.m in Sources */,
+				996773BE23DA38D900C4BCE6 /* JBStack.m in Sources */,
 				9967736323D9FDC800C4BCE6 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

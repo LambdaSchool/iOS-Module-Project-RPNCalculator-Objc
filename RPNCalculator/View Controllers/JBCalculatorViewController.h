@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JBCalculatorViewController.h
 //  RPNCalculator
 //
 //  Created by Jon Bash on 2020-01-23.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface JBCalculatorViewController : UIViewController
 
 @end
-
