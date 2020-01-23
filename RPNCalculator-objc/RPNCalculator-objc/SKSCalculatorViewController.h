@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SKSCalculatorViewController.h
 //  RPNCalculator-objc
 //
 //  Created by Lambda_School_Loaner_204 on 1/23/20.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SKSCalculatorViewController : UIViewController
 
 @end
 

@@ -1,22 +1,22 @@
 //
-//  ViewController.m
+//  SKSCalculatorViewController.m
 //  RPNCalculator-objc
 //
 //  Created by Lambda_School_Loaner_204 on 1/23/20.
 //  Copyright © 2020 Lambda School. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SKSCalculatorViewController.h"
 
-@interface ViewController ()
+@interface SKSCalculatorViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SKSCalculatorViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
 }
 
 

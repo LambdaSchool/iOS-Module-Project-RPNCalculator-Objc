@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		BBBCEC6A23DA379000506CAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC6923DA379000506CAF /* AppDelegate.m */; };
 		BBBCEC6D23DA379000506CAF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC6C23DA379000506CAF /* SceneDelegate.m */; };
-		BBBCEC7023DA379000506CAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC6F23DA379000506CAF /* ViewController.m */; };
 		BBBCEC7323DA379000506CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEC7123DA379000506CAF /* Main.storyboard */; };
 		BBBCEC7523DA379400506CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEC7423DA379400506CAF /* Assets.xcassets */; };
 		BBBCEC7823DA379400506CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEC7623DA379400506CAF /* LaunchScreen.storyboard */; };
 		BBBCEC7B23DA379400506CAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC7A23DA379400506CAF /* main.m */; };
+		BBBCEC8323DA38F400506CAF /* SKSCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC8223DA38F400506CAF /* SKSCalculatorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +22,13 @@
 		BBBCEC6923DA379000506CAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BBBCEC6B23DA379000506CAF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		BBBCEC6C23DA379000506CAF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		BBBCEC6E23DA379000506CAF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BBBCEC6F23DA379000506CAF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BBBCEC7223DA379000506CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBBCEC7423DA379400506CAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBBCEC7723DA379400506CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBBCEC7923DA379400506CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBBCEC7A23DA379400506CAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BBBCEC8123DA38F400506CAF /* SKSCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSCalculatorViewController.h; sourceTree = "<group>"; };
+		BBBCEC8223DA38F400506CAF /* SKSCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSCalculatorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +65,8 @@
 				BBBCEC6923DA379000506CAF /* AppDelegate.m */,
 				BBBCEC6B23DA379000506CAF /* SceneDelegate.h */,
 				BBBCEC6C23DA379000506CAF /* SceneDelegate.m */,
-				BBBCEC6E23DA379000506CAF /* ViewController.h */,
-				BBBCEC6F23DA379000506CAF /* ViewController.m */,
+				BBBCEC8123DA38F400506CAF /* SKSCalculatorViewController.h */,
+				BBBCEC8223DA38F400506CAF /* SKSCalculatorViewController.m */,
 				BBBCEC7123DA379000506CAF /* Main.storyboard */,
 				BBBCEC7423DA379400506CAF /* Assets.xcassets */,
 				BBBCEC7623DA379400506CAF /* LaunchScreen.storyboard */,
@@ -102,6 +102,7 @@
 		BBBCEC5D23DA379000506CAF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SKS;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
@@ -146,9 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBBCEC7023DA379000506CAF /* ViewController.m in Sources */,
 				BBBCEC6A23DA379000506CAF /* AppDelegate.m in Sources */,
 				BBBCEC7B23DA379400506CAF /* main.m in Sources */,
+				BBBCEC8323DA38F400506CAF /* SKSCalculatorViewController.m in Sources */,
 				BBBCEC6D23DA379000506CAF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
