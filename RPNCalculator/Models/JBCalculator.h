@@ -19,6 +19,8 @@ typedef NS_ENUM(NSUInteger, JBOperator) {
 
 @interface JBCalculator : NSObject
 
+- (instancetype)init;
+
 - (void)pushNumber:(double)value;
 - (void)applyOperator:(JBOperator)operator;
 - (void)clear;
