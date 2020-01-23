@@ -30,8 +30,10 @@
     [self.values addObject:number];
 }
 
-- (void)pop {
+- (NSNumber *)pop {
+    NSNumber *pop = [self peek];
     [self.values removeLastObject];
+    return pop;
 }
 
 - (NSNumber *)peek {
