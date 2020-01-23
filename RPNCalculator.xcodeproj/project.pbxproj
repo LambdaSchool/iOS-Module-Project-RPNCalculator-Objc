@@ -61,11 +61,11 @@
 		9967735D23D9FDC800C4BCE6 /* RPNCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				996773B723DA304B00C4BCE6 /* Model Controllers */,
-				996773B623DA304700C4BCE6 /* Models */,
-				996773B523DA304000C4BCE6 /* View Controllers */,
 				996773B423DA303B00C4BCE6 /* Storyboards */,
 				996773B323DA303500C4BCE6 /* Views */,
+				996773B523DA304000C4BCE6 /* View Controllers */,
+				996773B723DA304B00C4BCE6 /* Model Controllers */,
+				996773B623DA304700C4BCE6 /* Models */,
 				996773B223DA302E00C4BCE6 /* Application */,
 			);
 			path = RPNCalculator;
@@ -78,11 +78,7 @@
 				9967735F23D9FDC800C4BCE6 /* AppDelegate.m */,
 				9967736123D9FDC800C4BCE6 /* SceneDelegate.h */,
 				9967736223D9FDC800C4BCE6 /* SceneDelegate.m */,
-				9967736423D9FDC800C4BCE6 /* ViewController.h */,
-				9967736523D9FDC800C4BCE6 /* ViewController.m */,
-				9967736723D9FDC800C4BCE6 /* Main.storyboard */,
 				9967736A23D9FDCB00C4BCE6 /* Assets.xcassets */,
-				9967736C23D9FDCB00C4BCE6 /* LaunchScreen.storyboard */,
 				9967736F23D9FDCB00C4BCE6 /* Info.plist */,
 				9967737023D9FDCB00C4BCE6 /* main.m */,
 			);
@@ -99,6 +95,8 @@
 		996773B423DA303B00C4BCE6 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				9967736723D9FDC800C4BCE6 /* Main.storyboard */,
+				9967736C23D9FDCB00C4BCE6 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -106,6 +104,8 @@
 		996773B523DA304000C4BCE6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9967736423D9FDC800C4BCE6 /* ViewController.h */,
+				9967736523D9FDC800C4BCE6 /* ViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
