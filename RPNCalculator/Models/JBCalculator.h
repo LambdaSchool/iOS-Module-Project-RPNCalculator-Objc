@@ -10,10 +10,10 @@
 
 
 typedef NS_ENUM(NSUInteger, JBOperator) {
-    jbAdd,
-    jbSubtract,
-    jbMultiply,
-    jbDivide
+    jbAdd = 0,
+    jbSubtract = 1,
+    jbMultiply = 2,
+    jbDivide = 3
 };
 
 
