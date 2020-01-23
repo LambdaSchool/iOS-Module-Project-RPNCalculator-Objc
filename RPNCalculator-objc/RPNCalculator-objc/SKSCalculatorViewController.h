@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SKSCalculatorViewController : UIViewController
+@interface SKSCalculatorViewController : UIViewController <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
 

@@ -30,21 +30,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="j4f-mu-DLw" eventType="touchUpInside" id="TQF-cp-1Bi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9v-Jc-at5">
                                                 <rect key="frame" x="93.5" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="j4f-mu-DLw" eventType="touchUpInside" id="eup-jc-njU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gl-iH-cRB">
                                                 <rect key="frame" x="187" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="j4f-mu-DLw" eventType="touchUpInside" id="9iH-by-0AM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZ1-Sh-uCh">
                                                 <rect key="frame" x="280.5" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="÷"/>
+                                                <connections>
+                                                    <action selector="divideAccumulatedResults:" destination="j4f-mu-DLw" eventType="touchUpInside" id="lzR-MH-ktR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -55,21 +67,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="j4f-mu-DLw" eventType="touchUpInside" id="0Qs-WY-P68"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DS-jf-P3e">
                                                 <rect key="frame" x="93.5" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="j4f-mu-DLw" eventType="touchUpInside" id="pgA-or-lbE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jga-qU-oBi">
                                                 <rect key="frame" x="187" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="j4f-mu-DLw" eventType="touchUpInside" id="yut-P2-iaA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axZ-xX-V0I">
                                                 <rect key="frame" x="280.5" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="x"/>
+                                                <connections>
+                                                    <action selector="multiplyAccumulatedResults:" destination="j4f-mu-DLw" eventType="touchUpInside" id="KgI-Uv-2YH"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -80,21 +104,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="j4f-mu-DLw" eventType="touchUpInside" id="vS2-Ne-n4A"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLl-f5-CJi">
                                                 <rect key="frame" x="93.5" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="j4f-mu-DLw" eventType="touchUpInside" id="JNe-aA-Ir7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rr-Ri-fk1">
                                                 <rect key="frame" x="187" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="j4f-mu-DLw" eventType="touchUpInside" id="0An-wc-mC4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2XC-i3-qhI">
                                                 <rect key="frame" x="280.5" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="–"/>
+                                                <connections>
+                                                    <action selector="subtractAccumulatedResults:" destination="j4f-mu-DLw" eventType="touchUpInside" id="Qx4-te-UbV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -105,21 +141,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="."/>
+                                                <connections>
+                                                    <action selector="enterDecimal:" destination="j4f-mu-DLw" eventType="touchUpInside" id="WeD-31-6b1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXI-06-MDR">
                                                 <rect key="frame" x="93.5" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="enterNumericDigit:" destination="j4f-mu-DLw" eventType="touchUpInside" id="0la-Gv-ZVR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQF-cd-Cbe">
                                                 <rect key="frame" x="187" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="⏎"/>
+                                                <connections>
+                                                    <action selector="saveNumberToCalculator:" destination="j4f-mu-DLw" eventType="touchUpInside" id="Dqw-oY-DVr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3h-TQ-LBO">
                                                 <rect key="frame" x="280.5" y="0.0" width="93.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="addAccumulatedResults:" destination="j4f-mu-DLw" eventType="touchUpInside" id="mZ3-w9-hXv"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -134,6 +182,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aax-ha-OUY"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="OCq-I2-tik" id="y3G-X0-1bQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhH-CH-fZi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
