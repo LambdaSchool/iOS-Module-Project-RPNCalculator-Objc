@@ -56,7 +56,7 @@
 
 #pragma mark - Private
 
--(double) operateWithOperator:(JBOperator)operator
+- (double) operateWithOperator:(JBOperator)operator
                 onFirstNumber:(double)lhs
               andSecondNumber:(double)rhs
 {
@@ -70,6 +70,12 @@
         case jbDivide:
             return lhs / rhs;
     }
+}
+
+- (double)topValue
+{
+    NSNumber *value = [self.stack peek];
+    return [value doubleValue];
 }
 
 @end
