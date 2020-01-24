@@ -12,7 +12,7 @@
 
 @property (readonly) double value;
 
-- (void)addDigitWithNumericValue:(double)digit;
+- (void)addDigitWithNumericValue:(NSNumber *)digit;
 - (void)addDecimalPoint;
 - (void)clear;
 

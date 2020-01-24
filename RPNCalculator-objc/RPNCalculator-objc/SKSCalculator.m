@@ -21,7 +21,8 @@
 {
     self = [super init];
     if (self) {
-        _stack = [[SKSStack alloc] init];
+        NSArray *array = [[NSArray alloc] init];
+        _stack = [[SKSStack alloc] initWith:array];
     }
     return self;
 }

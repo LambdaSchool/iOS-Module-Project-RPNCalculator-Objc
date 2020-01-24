@@ -8,18 +8,37 @@
 
 #import "SKSDigitAccumulator.h"
 
+@interface SKSDigitAccumulator()
+
+@property (nonatomic)NSMutableArray *digits;
+
+@end
+
 @implementation SKSDigitAccumulator
 
-- (void)addDigitWithNumericValue:(double)digit {
-    //NSNumber
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _digits = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
+- (void)addDigitWithNumericValue:(NSNumber *)digit {
+    double *ptr = &_value;
+    [self.digits addObject:digit];
+    NSLog(@"Digits: %f", [[self.digits componentsJoinedByString:@""] doubleValue]);
+    *ptr = [[self.digits componentsJoinedByString:@""] doubleValue];
+    //number
 }
 
 - (void)addDecimalPoint {
-
+    [self.digits addObject:@"."];
 }
 
 - (void)clear {
-
+    [self.digits removeAllObjects];
 }
 
 @end
