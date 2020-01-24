@@ -17,6 +17,8 @@
 
 @property (nonatomic) NSNumberFormatter *numberFormatter;
 
+- (void)updateTextFieldWithValue:(double)value;
+
 @end
 
 @implementation SKSCalculatorViewController
@@ -40,8 +42,7 @@
 - (IBAction)enterNumericDigit:(UIButton *)sender {
     NSNumber *num = [NSNumber numberWithInteger:sender.tag];
     [self.digitAccumulator addDigitWithNumericValue:num];
-    NSNumber *value = [NSNumber numberWithDouble:[self.digitAccumulator value]];
-    self.textField.text = [self.numberFormatter stringFromNumber:value];
+    [self updateTextFieldWithValue:[self.digitAccumulator value]];
 }
 
 - (IBAction)enterDecimal:(id)sender {
@@ -56,20 +57,27 @@
 
 - (IBAction)addAccumulatedResults:(id)sender {
     [self.calculator applyOperator:add];
-    NSNumber *value = [NSNumber numberWithDouble:[self.calculator topValue]];
-    self.textField.text = [self.numberFormatter stringFromNumber:value];
+    [self updateTextFieldWithValue:[self.calculator topValue]];
 }
 
 - (IBAction)subtractAccumulatedResults:(id)sender {
     [self.calculator applyOperator:subtract];
+    [self updateTextFieldWithValue:[self.calculator topValue]];
 }
 
 - (IBAction)multiplyAccumulatedResults:(id)sender {
     [self.calculator applyOperator:multiply];
+    [self updateTextFieldWithValue:[self.calculator topValue]];
 }
 
 - (IBAction)divideAccumulatedResults:(id)sender {
     [self.calculator applyOperator:divide];
+    [self updateTextFieldWithValue:[self.calculator topValue]];
+}
+
+- (void)updateTextFieldWithValue:(double)value {
+    NSNumber *tempValue = [NSNumber numberWithDouble:value];
+    self.textField.text = [self.numberFormatter stringFromNumber:tempValue];
 }
 
 - (NSNumberFormatter *)numberFormatter {
