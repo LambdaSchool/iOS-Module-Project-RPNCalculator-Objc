@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBBCEC6A23DA379000506CAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC6923DA379000506CAF /* AppDelegate.m */; };
+		BBBCEC6D23DA379000506CAF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC6C23DA379000506CAF /* SceneDelegate.m */; };
+		BBBCEC7323DA379000506CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEC7123DA379000506CAF /* Main.storyboard */; };
+		BBBCEC7523DA379400506CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEC7423DA379400506CAF /* Assets.xcassets */; };
+		BBBCEC7823DA379400506CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEC7623DA379400506CAF /* LaunchScreen.storyboard */; };
+		BBBCEC7B23DA379400506CAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC7A23DA379400506CAF /* main.m */; };
+		BBBCEC8323DA38F400506CAF /* SKSCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC8223DA38F400506CAF /* SKSCalculatorViewController.m */; };
+		BBBCEC8623DA3A2900506CAF /* SKSStack.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC8523DA3A2900506CAF /* SKSStack.m */; };
+		BBBCEC8923DA3CE900506CAF /* SKSCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC8823DA3CE900506CAF /* SKSCalculator.m */; };
+		BBBCEC8C23DA44D600506CAF /* SKSDigitAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEC8B23DA44D600506CAF /* SKSDigitAccumulator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BBBCEC6523DA379000506CAF /* RPNCalculator-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPNCalculator-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBBCEC6823DA379000506CAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BBBCEC6923DA379000506CAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BBBCEC6B23DA379000506CAF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		BBBCEC6C23DA379000506CAF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		BBBCEC7223DA379000506CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBBCEC7423DA379400506CAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBBCEC7723DA379400506CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBBCEC7923DA379400506CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBBCEC7A23DA379400506CAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BBBCEC8123DA38F400506CAF /* SKSCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSCalculatorViewController.h; sourceTree = "<group>"; };
+		BBBCEC8223DA38F400506CAF /* SKSCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSCalculatorViewController.m; sourceTree = "<group>"; };
+		BBBCEC8423DA3A2900506CAF /* SKSStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSStack.h; sourceTree = "<group>"; };
+		BBBCEC8523DA3A2900506CAF /* SKSStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSStack.m; sourceTree = "<group>"; };
+		BBBCEC8723DA3CE900506CAF /* SKSCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSCalculator.h; sourceTree = "<group>"; };
+		BBBCEC8823DA3CE900506CAF /* SKSCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSCalculator.m; sourceTree = "<group>"; };
+		BBBCEC8A23DA44D600506CAF /* SKSDigitAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSDigitAccumulator.h; sourceTree = "<group>"; };
+		BBBCEC8B23DA44D600506CAF /* SKSDigitAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSDigitAccumulator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBBCEC6223DA379000506CAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBBCEC5C23DA379000506CAF = {
+			isa = PBXGroup;
+			children = (
+				BBBCEC6723DA379000506CAF /* RPNCalculator-objc */,
+				BBBCEC6623DA379000506CAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBBCEC6623DA379000506CAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEC6523DA379000506CAF /* RPNCalculator-objc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBBCEC6723DA379000506CAF /* RPNCalculator-objc */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEC6823DA379000506CAF /* AppDelegate.h */,
+				BBBCEC6923DA379000506CAF /* AppDelegate.m */,
+				BBBCEC6B23DA379000506CAF /* SceneDelegate.h */,
+				BBBCEC6C23DA379000506CAF /* SceneDelegate.m */,
+				BBBCEC8123DA38F400506CAF /* SKSCalculatorViewController.h */,
+				BBBCEC8223DA38F400506CAF /* SKSCalculatorViewController.m */,
+				BBBCEC8423DA3A2900506CAF /* SKSStack.h */,
+				BBBCEC8523DA3A2900506CAF /* SKSStack.m */,
+				BBBCEC8723DA3CE900506CAF /* SKSCalculator.h */,
+				BBBCEC8823DA3CE900506CAF /* SKSCalculator.m */,
+				BBBCEC8A23DA44D600506CAF /* SKSDigitAccumulator.h */,
+				BBBCEC8B23DA44D600506CAF /* SKSDigitAccumulator.m */,
+				BBBCEC7123DA379000506CAF /* Main.storyboard */,
+				BBBCEC7423DA379400506CAF /* Assets.xcassets */,
+				BBBCEC7623DA379400506CAF /* LaunchScreen.storyboard */,
+				BBBCEC7923DA379400506CAF /* Info.plist */,
+				BBBCEC7A23DA379400506CAF /* main.m */,
+			);
+			path = "RPNCalculator-objc";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBBCEC6423DA379000506CAF /* RPNCalculator-objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBBCEC7E23DA379400506CAF /* Build configuration list for PBXNativeTarget "RPNCalculator-objc" */;
+			buildPhases = (
+				BBBCEC6123DA379000506CAF /* Sources */,
+				BBBCEC6223DA379000506CAF /* Frameworks */,
+				BBBCEC6323DA379000506CAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RPNCalculator-objc";
+			productName = "RPNCalculator-objc";
+			productReference = BBBCEC6523DA379000506CAF /* RPNCalculator-objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBBCEC5D23DA379000506CAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SKS;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Lambda School";
+				TargetAttributes = {
+					BBBCEC6423DA379000506CAF = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = BBBCEC6023DA379000506CAF /* Build configuration list for PBXProject "RPNCalculator-objc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBBCEC5C23DA379000506CAF;
+			productRefGroup = BBBCEC6623DA379000506CAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBBCEC6423DA379000506CAF /* RPNCalculator-objc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBBCEC6323DA379000506CAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBBCEC7823DA379400506CAF /* LaunchScreen.storyboard in Resources */,
+				BBBCEC7523DA379400506CAF /* Assets.xcassets in Resources */,
+				BBBCEC7323DA379000506CAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBBCEC6123DA379000506CAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBBCEC6A23DA379000506CAF /* AppDelegate.m in Sources */,
+				BBBCEC7B23DA379400506CAF /* main.m in Sources */,
+				BBBCEC8323DA38F400506CAF /* SKSCalculatorViewController.m in Sources */,
+				BBBCEC8C23DA44D600506CAF /* SKSDigitAccumulator.m in Sources */,
+				BBBCEC6D23DA379000506CAF /* SceneDelegate.m in Sources */,
+				BBBCEC8623DA3A2900506CAF /* SKSStack.m in Sources */,
+				BBBCEC8923DA3CE900506CAF /* SKSCalculator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BBBCEC7123DA379000506CAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBBCEC7223DA379000506CAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBBCEC7623DA379400506CAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBBCEC7723DA379400506CAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBBCEC7C23DA379400506CAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BBBCEC7D23DA379400506CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBBCEC7F23DA379400506CAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RPNCalculator-objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.RPNCalculator-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBBCEC8023DA379400506CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RPNCalculator-objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.RPNCalculator-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBBCEC6023DA379000506CAF /* Build configuration list for PBXProject "RPNCalculator-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBBCEC7C23DA379400506CAF /* Debug */,
+				BBBCEC7D23DA379400506CAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBBCEC7E23DA379400506CAF /* Build configuration list for PBXNativeTarget "RPNCalculator-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBBCEC7F23DA379400506CAF /* Debug */,
+				BBBCEC8023DA379400506CAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBBCEC5D23DA379000506CAF /* Project object */;
+}
