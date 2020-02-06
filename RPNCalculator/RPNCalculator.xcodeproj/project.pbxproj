@@ -14,6 +14,9 @@
 		379CF22D23EC9AE100681DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379CF22B23EC9AE100681DD0 /* LaunchScreen.storyboard */; };
 		379CF23023EC9AE100681DD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 379CF22F23EC9AE100681DD0 /* main.m */; };
 		37F5154923ECA64000E9CE7B /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5154823ECA64000E9CE7B /* CalculatorViewController.m */; };
+		37F5154D23ECA78300E9CE7B /* RPNStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5154C23ECA78300E9CE7B /* RPNStack.m */; };
+		37F5155023ECA79400E9CE7B /* RPNCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5154F23ECA79400E9CE7B /* RPNCalculator.m */; };
+		37F5155323ECA7B200E9CE7B /* RPNDigitAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5155223ECA7B200E9CE7B /* RPNDigitAccumulator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		379CF22F23EC9AE100681DD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37F5154723ECA64000E9CE7B /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		37F5154823ECA64000E9CE7B /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		37F5154B23ECA78300E9CE7B /* RPNStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPNStack.h; sourceTree = "<group>"; };
+		37F5154C23ECA78300E9CE7B /* RPNStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPNStack.m; sourceTree = "<group>"; };
+		37F5154E23ECA79400E9CE7B /* RPNCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPNCalculator.h; sourceTree = "<group>"; };
+		37F5154F23ECA79400E9CE7B /* RPNCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPNCalculator.m; sourceTree = "<group>"; };
+		37F5155123ECA7B200E9CE7B /* RPNDigitAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPNDigitAccumulator.h; sourceTree = "<group>"; };
+		37F5155223ECA7B200E9CE7B /* RPNDigitAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPNDigitAccumulator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				379CF23823EC9B3F00681DD0 /* App Lifecycle */,
+				37F5154A23ECA75300E9CE7B /* Models */,
 				379CF23723EC9B3D00681DD0 /* View Controllers */,
 				379CF23923EC9B6D00681DD0 /* Storyboards */,
 				379CF23623EC9B3800681DD0 /* Resources */,
@@ -106,6 +116,19 @@
 				379CF22623EC9ADF00681DD0 /* Main.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		37F5154A23ECA75300E9CE7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37F5154B23ECA78300E9CE7B /* RPNStack.h */,
+				37F5154C23ECA78300E9CE7B /* RPNStack.m */,
+				37F5154E23ECA79400E9CE7B /* RPNCalculator.h */,
+				37F5154F23ECA79400E9CE7B /* RPNCalculator.m */,
+				37F5155123ECA7B200E9CE7B /* RPNDigitAccumulator.h */,
+				37F5155223ECA7B200E9CE7B /* RPNDigitAccumulator.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,8 +202,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				379CF21F23EC9ADF00681DD0 /* AppDelegate.m in Sources */,
+				37F5155323ECA7B200E9CE7B /* RPNDigitAccumulator.m in Sources */,
 				379CF23023EC9AE100681DD0 /* main.m in Sources */,
 				37F5154923ECA64000E9CE7B /* CalculatorViewController.m in Sources */,
+				37F5154D23ECA78300E9CE7B /* RPNStack.m in Sources */,
+				37F5155023ECA79400E9CE7B /* RPNCalculator.m in Sources */,
 				379CF22223EC9ADF00681DD0 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
