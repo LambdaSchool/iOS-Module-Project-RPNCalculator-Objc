@@ -13,6 +13,7 @@
 		379CF22A23EC9AE100681DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379CF22923EC9AE100681DD0 /* Assets.xcassets */; };
 		379CF22D23EC9AE100681DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379CF22B23EC9AE100681DD0 /* LaunchScreen.storyboard */; };
 		379CF23023EC9AE100681DD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 379CF22F23EC9AE100681DD0 /* main.m */; };
+		37F5154923ECA64000E9CE7B /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5154823ECA64000E9CE7B /* CalculatorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		379CF22C23EC9AE100681DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		379CF22E23EC9AE100681DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		379CF22F23EC9AE100681DD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37F5154723ECA64000E9CE7B /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		37F5154823ECA64000E9CE7B /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 		379CF23723EC9B3D00681DD0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				37F5154723ECA64000E9CE7B /* CalculatorViewController.h */,
+				37F5154823ECA64000E9CE7B /* CalculatorViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			files = (
 				379CF21F23EC9ADF00681DD0 /* AppDelegate.m in Sources */,
 				379CF23023EC9AE100681DD0 /* main.m in Sources */,
+				37F5154923ECA64000E9CE7B /* CalculatorViewController.m in Sources */,
 				379CF22223EC9ADF00681DD0 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
