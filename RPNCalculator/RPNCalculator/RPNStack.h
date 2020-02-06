@@ -12,6 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RPNStack : NSObject
 
+//MARK: - Initializers
+- (instancetype)initWith:(NSArray *)anArray;
+
+//MARK: - Methods
+
+- (void)push:(double *)dub;
+- (double)pop;
+- (double)peek;
+
 @end
 
 NS_ASSUME_NONNULL_END

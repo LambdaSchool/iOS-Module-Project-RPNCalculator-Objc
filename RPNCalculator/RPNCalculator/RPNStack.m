@@ -8,6 +8,36 @@
 
 #import "RPNStack.h"
 
+@interface RPNStack ()
+
+@property (nonatomic, readonly, copy) NSMutableArray *values;
+
+@end
+
 @implementation RPNStack
+
+//MARK: - Initializers
+
+- (instancetype)initWith:(NSArray *)anArray
+{
+    return [self initWith:anArray];
+}
+
+//MARK: - Methods
+
+- (void)push:(double *)dub
+{
+    
+}
+
+- (double)pop
+{
+    return 1.5;
+}
+
+- (double)peek
+{
+    return 1.5;
+}
 
 @end
