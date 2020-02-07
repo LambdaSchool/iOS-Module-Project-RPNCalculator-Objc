@@ -35,7 +35,6 @@
                                                 <state key="normal" title="7"/>
                                                 <connections>
                                                     <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q1J-OS-7CI"/>
-                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YBB-GT-MwS"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s92-Q9-ATm">
@@ -44,7 +43,6 @@
                                                 <state key="normal" title="8"/>
                                                 <connections>
                                                     <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="28I-C7-KLR"/>
-                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xqL-Ck-K5M"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCh-cq-hgh">
@@ -53,7 +51,6 @@
                                                 <state key="normal" title="9"/>
                                                 <connections>
                                                     <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mCh-o7-t8x"/>
-                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5N4-P7-pLI"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wi2-0F-akq">
@@ -61,7 +58,6 @@
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
                                                 <state key="normal" title="%"/>
                                                 <connections>
-                                                    <action selector="divideButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="090-K4-HIS"/>
                                                     <action selector="divideResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KPr-yG-fQH"/>
                                                 </connections>
                                             </button>
@@ -76,7 +72,6 @@
                                                 <state key="normal" title="4"/>
                                                 <connections>
                                                     <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3zY-bx-YNk"/>
-                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eQy-8Y-TVW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awe-re-219">
@@ -85,7 +80,6 @@
                                                 <state key="normal" title="5"/>
                                                 <connections>
                                                     <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mak-Pj-Ciw"/>
-                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Wk-zg-2JV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGH-PW-qUx">
@@ -94,7 +88,6 @@
                                                 <state key="normal" title="6"/>
                                                 <connections>
                                                     <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fB9-H9-4qu"/>
-                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h8P-2e-VS6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8n-AW-BKc">
@@ -102,7 +95,6 @@
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
                                                 <state key="normal" title="x"/>
                                                 <connections>
-                                                    <action selector="multiplyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GqW-mX-u8Z"/>
                                                     <action selector="multiplyResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3fm-1y-egX"/>
                                                 </connections>
                                             </button>
@@ -118,7 +110,6 @@
                                                 <state key="normal" title="1"/>
                                                 <connections>
                                                     <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgd-Ig-eYR"/>
-                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tpc-mf-r9j"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLF-2K-3zH">
@@ -127,7 +118,6 @@
                                                 <state key="normal" title="2"/>
                                                 <connections>
                                                     <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hfU-LL-Who"/>
-                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5TQ-UE-Htj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWe-yV-54s">
@@ -136,7 +126,6 @@
                                                 <state key="normal" title="3"/>
                                                 <connections>
                                                     <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e8H-4m-PAn"/>
-                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iBY-tg-jfY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCC-E2-NXp">
@@ -144,7 +133,6 @@
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
                                                 <state key="normal" title="-"/>
                                                 <connections>
-                                                    <action selector="subtractButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EIm-of-CKH"/>
                                                     <action selector="subtractResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n8R-Wh-L5l"/>
                                                 </connections>
                                             </button>
@@ -159,7 +147,6 @@
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
                                                 <state key="normal" title="."/>
                                                 <connections>
-                                                    <action selector="decimalButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nv7-sN-qal"/>
                                                     <action selector="enterDecimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RNL-vc-7ag"/>
                                                 </connections>
                                             </button>
@@ -169,7 +156,6 @@
                                                 <state key="normal" title="0"/>
                                                 <connections>
                                                     <action selector="enterNumericDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="30k-U2-ckl"/>
-                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F3Z-7C-uac"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxb-KL-bfD">
@@ -178,7 +164,6 @@
                                                 <state key="normal" title="⮐"/>
                                                 <connections>
                                                     <action selector="addNumberToStack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bd9-mG-z6X"/>
-                                                    <action selector="returnButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TaS-EX-bP8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEs-lh-uk0">
@@ -187,7 +172,6 @@
                                                 <state key="normal" title="+"/>
                                                 <connections>
                                                     <action selector="addResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKx-hs-Pvq"/>
-                                                    <action selector="plusButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbw-93-fmQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
