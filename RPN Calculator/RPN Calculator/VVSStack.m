@@ -10,27 +10,34 @@
 
 @interface VVSStack ()
 
-@property (nonatomic, copy) NSMutableArray<NSNumber *> *internalArray;
+@property (nonatomic, copy) NSMutableArray<NSNumber *> *values;
 
 @end
 
 @implementation VVSStack
 
+- (instancetype)initWithArray:(NSArray *)array {
+    if (self = [super init]) {
+        _values = [array mutableCopy];
+    }
+    return self;
+}
+
 - (NSNumber *)peek
 {
-    return _internalArray.lastObject;
+    return _values.lastObject;
 }
 
 - (NSNumber *)pop
 {
-    NSNumber *obj = _internalArray.lastObject;
-    [_internalArray removeLastObject];
+    NSNumber *obj = _values.lastObject;
+    [_values removeLastObject];
     return obj;
 }
 
 - (void)push:(NSNumber *)number
 {
-    return [_internalArray addObject:number];
+    return [_values addObject:number];
 }
 
 @end

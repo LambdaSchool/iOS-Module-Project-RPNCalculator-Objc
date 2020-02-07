@@ -14,6 +14,7 @@
 		E33BB3AF23EC70A600B06AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33BB3AD23EC70A600B06AA4 /* LaunchScreen.storyboard */; };
 		E33BB3B223EC70A600B06AA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB3B123EC70A600B06AA4 /* main.m */; };
 		E33BB3BB23ECB5C800B06AA4 /* VVSStack.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB3BA23ECB5C800B06AA4 /* VVSStack.m */; };
+		E33BB3BE23ED087E00B06AA4 /* VVSCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB3BD23ED087E00B06AA4 /* VVSCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		E33BB3B123EC70A600B06AA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E33BB3B923ECB5C800B06AA4 /* VVSStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVSStack.h; sourceTree = "<group>"; };
 		E33BB3BA23ECB5C800B06AA4 /* VVSStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSStack.m; sourceTree = "<group>"; };
+		E33BB3BC23ED087E00B06AA4 /* VVSCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVSCalculator.h; sourceTree = "<group>"; };
+		E33BB3BD23ED087E00B06AA4 /* VVSCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				E33BB3AD23EC70A600B06AA4 /* LaunchScreen.storyboard */,
 				E33BB3B023EC70A600B06AA4 /* Info.plist */,
 				E33BB3B123EC70A600B06AA4 /* main.m */,
+				E33BB3BC23ED087E00B06AA4 /* VVSCalculator.h */,
+				E33BB3BD23ED087E00B06AA4 /* VVSCalculator.m */,
 			);
 			path = "RPN Calculator";
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33BB3BE23ED087E00B06AA4 /* VVSCalculator.m in Sources */,
 				E33BB3A123EC70A500B06AA4 /* AppDelegate.m in Sources */,
 				E33BB3B223EC70A600B06AA4 /* main.m in Sources */,
 				E33BB3BB23ECB5C800B06AA4 /* VVSStack.m in Sources */,

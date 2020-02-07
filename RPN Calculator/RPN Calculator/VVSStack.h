@@ -10,11 +10,15 @@
 
 @interface VVSStack : NSObject
 
+- (instancetype)initWithArray:(NSArray *)array;
+
 - (NSNumber *)peek;
 
 - (NSNumber *)pop;
 
 - (void)push:(NSNumber *)number;
+
+
 
 @end
 
