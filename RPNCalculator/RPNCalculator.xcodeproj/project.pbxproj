@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2966965223ECFE4900AF37E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2966965123ECFE4900AF37E9 /* AppDelegate.m */; };
+		2966965523ECFE4900AF37E9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2966965423ECFE4900AF37E9 /* SceneDelegate.m */; };
+		2966965B23ECFE4900AF37E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2966965923ECFE4900AF37E9 /* Main.storyboard */; };
+		2966965D23ECFE4900AF37E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2966965C23ECFE4900AF37E9 /* Assets.xcassets */; };
+		2966966023ECFE4900AF37E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2966965E23ECFE4900AF37E9 /* LaunchScreen.storyboard */; };
+		2966966323ECFE4900AF37E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2966966223ECFE4900AF37E9 /* main.m */; };
+		2966966C23ED01E900AF37E9 /* JDKCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2966966B23ED01E900AF37E9 /* JDKCalculatorViewController.m */; };
+		2966966F23ED02DB00AF37E9 /* JDKCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2966966E23ED02DB00AF37E9 /* JDKCalculator.m */; };
+		2966967323ED030000AF37E9 /* JDKStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 2966967223ED030000AF37E9 /* JDKStack.m */; };
+		2966967623ED033000AF37E9 /* JDKDigitAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2966967523ED033000AF37E9 /* JDKDigitAccumulator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2966964D23ECFE4900AF37E9 /* RPNCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPNCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2966965023ECFE4900AF37E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2966965123ECFE4900AF37E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2966965323ECFE4900AF37E9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		2966965423ECFE4900AF37E9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		2966965A23ECFE4900AF37E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2966965C23ECFE4900AF37E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2966965F23ECFE4900AF37E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2966966123ECFE4900AF37E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2966966223ECFE4900AF37E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2966966A23ED01E900AF37E9 /* JDKCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDKCalculatorViewController.h; sourceTree = "<group>"; };
+		2966966B23ED01E900AF37E9 /* JDKCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDKCalculatorViewController.m; sourceTree = "<group>"; };
+		2966966D23ED02DB00AF37E9 /* JDKCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDKCalculator.h; sourceTree = "<group>"; };
+		2966966E23ED02DB00AF37E9 /* JDKCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDKCalculator.m; sourceTree = "<group>"; };
+		2966967123ED030000AF37E9 /* JDKStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDKStack.h; sourceTree = "<group>"; };
+		2966967223ED030000AF37E9 /* JDKStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDKStack.m; sourceTree = "<group>"; };
+		2966967423ED033000AF37E9 /* JDKDigitAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDKDigitAccumulator.h; sourceTree = "<group>"; };
+		2966967523ED033000AF37E9 /* JDKDigitAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDKDigitAccumulator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2966964A23ECFE4900AF37E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2966964423ECFE4900AF37E9 = {
+			isa = PBXGroup;
+			children = (
+				2966964F23ECFE4900AF37E9 /* RPNCalculator */,
+				2966964E23ECFE4900AF37E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2966964E23ECFE4900AF37E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2966964D23ECFE4900AF37E9 /* RPNCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2966964F23ECFE4900AF37E9 /* RPNCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				2966965023ECFE4900AF37E9 /* AppDelegate.h */,
+				2966965123ECFE4900AF37E9 /* AppDelegate.m */,
+				2966965323ECFE4900AF37E9 /* SceneDelegate.h */,
+				2966965423ECFE4900AF37E9 /* SceneDelegate.m */,
+				2966966A23ED01E900AF37E9 /* JDKCalculatorViewController.h */,
+				2966966B23ED01E900AF37E9 /* JDKCalculatorViewController.m */,
+				2966967123ED030000AF37E9 /* JDKStack.h */,
+				2966967223ED030000AF37E9 /* JDKStack.m */,
+				2966966D23ED02DB00AF37E9 /* JDKCalculator.h */,
+				2966966E23ED02DB00AF37E9 /* JDKCalculator.m */,
+				2966967423ED033000AF37E9 /* JDKDigitAccumulator.h */,
+				2966967523ED033000AF37E9 /* JDKDigitAccumulator.m */,
+				2966965923ECFE4900AF37E9 /* Main.storyboard */,
+				2966965C23ECFE4900AF37E9 /* Assets.xcassets */,
+				2966965E23ECFE4900AF37E9 /* LaunchScreen.storyboard */,
+				2966966123ECFE4900AF37E9 /* Info.plist */,
+				2966966223ECFE4900AF37E9 /* main.m */,
+			);
+			path = RPNCalculator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2966964C23ECFE4900AF37E9 /* RPNCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2966966623ECFE4900AF37E9 /* Build configuration list for PBXNativeTarget "RPNCalculator" */;
+			buildPhases = (
+				2966964923ECFE4900AF37E9 /* Sources */,
+				2966964A23ECFE4900AF37E9 /* Frameworks */,
+				2966964B23ECFE4900AF37E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPNCalculator;
+			productName = RPNCalculator;
+			productReference = 2966964D23ECFE4900AF37E9 /* RPNCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2966964523ECFE4900AF37E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JDK;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "John Kouris";
+				TargetAttributes = {
+					2966964C23ECFE4900AF37E9 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 2966964823ECFE4900AF37E9 /* Build configuration list for PBXProject "RPNCalculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2966964423ECFE4900AF37E9;
+			productRefGroup = 2966964E23ECFE4900AF37E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2966964C23ECFE4900AF37E9 /* RPNCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2966964B23ECFE4900AF37E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2966966023ECFE4900AF37E9 /* LaunchScreen.storyboard in Resources */,
+				2966965D23ECFE4900AF37E9 /* Assets.xcassets in Resources */,
+				2966965B23ECFE4900AF37E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2966964923ECFE4900AF37E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2966966F23ED02DB00AF37E9 /* JDKCalculator.m in Sources */,
+				2966965223ECFE4900AF37E9 /* AppDelegate.m in Sources */,
+				2966967323ED030000AF37E9 /* JDKStack.m in Sources */,
+				2966966323ECFE4900AF37E9 /* main.m in Sources */,
+				2966966C23ED01E900AF37E9 /* JDKCalculatorViewController.m in Sources */,
+				2966965523ECFE4900AF37E9 /* SceneDelegate.m in Sources */,
+				2966967623ED033000AF37E9 /* JDKDigitAccumulator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2966965923ECFE4900AF37E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2966965A23ECFE4900AF37E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2966965E23ECFE4900AF37E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2966965F23ECFE4900AF37E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2966966423ECFE4900AF37E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2966966523ECFE4900AF37E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2966966723ECFE4900AF37E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SE96QQ4Q6G;
+				INFOPLIST_FILE = RPNCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JohnKouris.RPNCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2966966823ECFE4900AF37E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SE96QQ4Q6G;
+				INFOPLIST_FILE = RPNCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JohnKouris.RPNCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2966964823ECFE4900AF37E9 /* Build configuration list for PBXProject "RPNCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2966966423ECFE4900AF37E9 /* Debug */,
+				2966966523ECFE4900AF37E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2966966623ECFE4900AF37E9 /* Build configuration list for PBXNativeTarget "RPNCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2966966723ECFE4900AF37E9 /* Debug */,
+				2966966823ECFE4900AF37E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2966964523ECFE4900AF37E9 /* Project object */;
+}
