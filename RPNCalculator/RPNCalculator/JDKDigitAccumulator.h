@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JDKDigitAccumulator : NSObject
 
+@property (readonly) double value;
+
+- (void)addDigitWithNumericValue:(NSNumber *)digit;
+- (void)addDecimalPoint;
+- (void)clear;
+
 @end
 
 NS_ASSUME_NONNULL_END
