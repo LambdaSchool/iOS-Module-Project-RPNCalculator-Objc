@@ -10,7 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JDKCalculatorViewController : UIViewController
+@interface JDKCalculatorViewController : UIViewController <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
 
 @end
 

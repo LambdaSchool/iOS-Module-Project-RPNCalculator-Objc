@@ -14,6 +14,9 @@
 		2966966023ECFE4900AF37E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2966965E23ECFE4900AF37E9 /* LaunchScreen.storyboard */; };
 		2966966323ECFE4900AF37E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2966966223ECFE4900AF37E9 /* main.m */; };
 		2966966C23ED01E900AF37E9 /* JDKCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2966966B23ED01E900AF37E9 /* JDKCalculatorViewController.m */; };
+		2966966F23ED02DB00AF37E9 /* JDKCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2966966E23ED02DB00AF37E9 /* JDKCalculator.m */; };
+		2966967323ED030000AF37E9 /* JDKStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 2966967223ED030000AF37E9 /* JDKStack.m */; };
+		2966967623ED033000AF37E9 /* JDKDigitAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2966967523ED033000AF37E9 /* JDKDigitAccumulator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		2966966223ECFE4900AF37E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2966966A23ED01E900AF37E9 /* JDKCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDKCalculatorViewController.h; sourceTree = "<group>"; };
 		2966966B23ED01E900AF37E9 /* JDKCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDKCalculatorViewController.m; sourceTree = "<group>"; };
+		2966966D23ED02DB00AF37E9 /* JDKCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDKCalculator.h; sourceTree = "<group>"; };
+		2966966E23ED02DB00AF37E9 /* JDKCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDKCalculator.m; sourceTree = "<group>"; };
+		2966967123ED030000AF37E9 /* JDKStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDKStack.h; sourceTree = "<group>"; };
+		2966967223ED030000AF37E9 /* JDKStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDKStack.m; sourceTree = "<group>"; };
+		2966967423ED033000AF37E9 /* JDKDigitAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDKDigitAccumulator.h; sourceTree = "<group>"; };
+		2966967523ED033000AF37E9 /* JDKDigitAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDKDigitAccumulator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,12 @@
 				2966965423ECFE4900AF37E9 /* SceneDelegate.m */,
 				2966966A23ED01E900AF37E9 /* JDKCalculatorViewController.h */,
 				2966966B23ED01E900AF37E9 /* JDKCalculatorViewController.m */,
+				2966967123ED030000AF37E9 /* JDKStack.h */,
+				2966967223ED030000AF37E9 /* JDKStack.m */,
+				2966966D23ED02DB00AF37E9 /* JDKCalculator.h */,
+				2966966E23ED02DB00AF37E9 /* JDKCalculator.m */,
+				2966967423ED033000AF37E9 /* JDKDigitAccumulator.h */,
+				2966967523ED033000AF37E9 /* JDKDigitAccumulator.m */,
 				2966965923ECFE4900AF37E9 /* Main.storyboard */,
 				2966965C23ECFE4900AF37E9 /* Assets.xcassets */,
 				2966965E23ECFE4900AF37E9 /* LaunchScreen.storyboard */,
@@ -147,10 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2966966F23ED02DB00AF37E9 /* JDKCalculator.m in Sources */,
 				2966965223ECFE4900AF37E9 /* AppDelegate.m in Sources */,
+				2966967323ED030000AF37E9 /* JDKStack.m in Sources */,
 				2966966323ECFE4900AF37E9 /* main.m in Sources */,
 				2966966C23ED01E900AF37E9 /* JDKCalculatorViewController.m in Sources */,
 				2966965523ECFE4900AF37E9 /* SceneDelegate.m in Sources */,
+				2966967623ED033000AF37E9 /* JDKDigitAccumulator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
