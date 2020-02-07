@@ -13,6 +13,7 @@
 		E33BB3AC23EC70A600B06AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33BB3AB23EC70A600B06AA4 /* Assets.xcassets */; };
 		E33BB3AF23EC70A600B06AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33BB3AD23EC70A600B06AA4 /* LaunchScreen.storyboard */; };
 		E33BB3B223EC70A600B06AA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB3B123EC70A600B06AA4 /* main.m */; };
+		E33BB3BB23ECB5C800B06AA4 /* VVSStack.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB3BA23ECB5C800B06AA4 /* VVSStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E33BB3AE23EC70A600B06AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E33BB3B023EC70A600B06AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E33BB3B123EC70A600B06AA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E33BB3B923ECB5C800B06AA4 /* VVSStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVSStack.h; sourceTree = "<group>"; };
+		E33BB3BA23ECB5C800B06AA4 /* VVSStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		E33BB39E23EC70A500B06AA4 /* RPN Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				E33BB3B923ECB5C800B06AA4 /* VVSStack.h */,
+				E33BB3BA23ECB5C800B06AA4 /* VVSStack.m */,
 				E33BB39F23EC70A500B06AA4 /* AppDelegate.h */,
 				E33BB3A023EC70A500B06AA4 /* AppDelegate.m */,
 				E33BB3A223EC70A500B06AA4 /* SceneDelegate.h */,
@@ -97,6 +102,7 @@
 		E33BB39423EC70A500B06AA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = VVS;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Vici Shaweddy";
 				TargetAttributes = {
@@ -143,6 +149,7 @@
 			files = (
 				E33BB3A123EC70A500B06AA4 /* AppDelegate.m in Sources */,
 				E33BB3B223EC70A600B06AA4 /* main.m in Sources */,
+				E33BB3BB23ECB5C800B06AA4 /* VVSStack.m in Sources */,
 				E33BB3A423EC70A500B06AA4 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
