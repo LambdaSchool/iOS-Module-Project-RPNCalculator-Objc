@@ -47,12 +47,16 @@
     switch (operator) {
         case Addition:
             result = firstPoppedElement + secondPoppedElement;
+            break;
         case Substraction:
             result = firstPoppedElement - secondPoppedElement;
+            break;
         case Multiply:
             result = firstPoppedElement * secondPoppedElement;
+            break;
         case Division:
             result = firstPoppedElement / secondPoppedElement;
+            break;
     }
     
     [_stack push:[NSNumber numberWithDouble:result]];

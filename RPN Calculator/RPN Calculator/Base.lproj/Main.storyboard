@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Calculator View Controller-->
         <scene sceneID="KMi-m4-Vav">
             <objects>
-                <viewController id="Ybv-ty-TI2" sceneMemberID="viewController">
+                <viewController id="Ybv-ty-TI2" customClass="VVSRPNCalculatorViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4sz-tE-7Uf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,6 +32,9 @@
                                                 <state key="normal" title="7">
                                                     <color key="titleColor" red="0.98483105959999995" green="0.5146477398" blue="0.96887176669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="H8I-Q2-uWU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lko-hg-DNX">
                                                 <rect key="frame" x="106" y="0.0" width="58" height="70"/>
@@ -39,6 +42,9 @@
                                                 <state key="normal" title="8">
                                                     <color key="titleColor" red="0.98483105959999995" green="0.5146477398" blue="0.96887176669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="pCC-Yn-Uim"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fg0-PK-WgJ">
                                                 <rect key="frame" x="212" y="0.0" width="58" height="70"/>
@@ -46,6 +52,9 @@
                                                 <state key="normal" title="9">
                                                     <color key="titleColor" red="0.98483105959999995" green="0.5146477398" blue="0.96887176669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="hQn-dC-FYY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXD-pe-uhw">
                                                 <rect key="frame" x="318" y="0.0" width="58" height="70"/>
@@ -53,6 +62,9 @@
                                                 <state key="normal" title="%">
                                                     <color key="titleColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="divideButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="oYV-Hx-YMt"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -65,6 +77,9 @@
                                                 <state key="normal" title="4">
                                                     <color key="titleColor" red="0.98483105959999995" green="0.5146477398" blue="0.96887176669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="Zdv-PU-3NB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhD-yQ-xKg">
                                                 <rect key="frame" x="106" y="0.0" width="58" height="70"/>
@@ -72,6 +87,9 @@
                                                 <state key="normal" title="5">
                                                     <color key="titleColor" red="0.98483105959999995" green="0.5146477398" blue="0.96887176669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="7bZ-9e-Fs5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4T-io-CrB">
                                                 <rect key="frame" x="212" y="0.0" width="58" height="70"/>
@@ -79,6 +97,9 @@
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" red="0.98483105959999995" green="0.5146477398" blue="0.96887176669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="2xb-aL-7h8"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCG-pr-8xA">
                                                 <rect key="frame" x="318" y="0.0" width="58" height="70"/>
@@ -86,6 +107,9 @@
                                                 <state key="normal" title="x">
                                                     <color key="titleColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="multiplyButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="rwd-p0-hj5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -98,6 +122,9 @@
                                                 <state key="normal" title="1">
                                                     <color key="titleColor" red="0.98483105959999995" green="0.5146477398" blue="0.96887176669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="kXN-72-HbS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fl5-89-u50">
                                                 <rect key="frame" x="106" y="0.0" width="58" height="70"/>
@@ -105,6 +132,9 @@
                                                 <state key="normal" title="2">
                                                     <color key="titleColor" red="0.98483105959999995" green="0.5146477398" blue="0.96887176669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="nZk-mz-DAJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krt-xV-BST">
                                                 <rect key="frame" x="212" y="0.0" width="58" height="70"/>
@@ -112,6 +142,9 @@
                                                 <state key="normal" title="3">
                                                     <color key="titleColor" red="0.98483105959999995" green="0.5146477398" blue="0.96887176669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="D18-GT-hzC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f61-RH-rEg">
                                                 <rect key="frame" x="318" y="0.0" width="58" height="70"/>
@@ -119,6 +152,9 @@
                                                 <state key="normal" title="-">
                                                     <color key="titleColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="minusButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="qVc-1A-7cH"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -131,6 +167,9 @@
                                                 <state key="normal" title=".">
                                                     <color key="titleColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="decimalButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="lOW-wT-8PX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQF-8S-mcM">
                                                 <rect key="frame" x="106" y="0.0" width="58" height="70"/>
@@ -138,6 +177,9 @@
                                                 <state key="normal" title="0">
                                                     <color key="titleColor" red="0.98483105959999995" green="0.5146477398" blue="0.96887176669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="OYj-FP-MDg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTZ-eB-Xbs">
                                                 <rect key="frame" x="212" y="0.0" width="58" height="70"/>
@@ -145,6 +187,9 @@
                                                 <state key="normal" title="⮐">
                                                     <color key="titleColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="returnButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="GH8-Oc-egn"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMN-UO-RAs">
                                                 <rect key="frame" x="318" y="0.0" width="58" height="70"/>
@@ -152,6 +197,9 @@
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="plusButtonTapped:" destination="Ybv-ty-TI2" eventType="touchUpInside" id="0P1-HG-h6B"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -167,6 +215,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ejC-PL-HNh"/>
                     </view>
+                    <connections>
+                        <outlet property="digitTextField" destination="EXb-rq-AUJ" id="SHh-dc-iM7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeH-My-YqU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

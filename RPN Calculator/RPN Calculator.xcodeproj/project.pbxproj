@@ -15,6 +15,8 @@
 		E33BB3B223EC70A600B06AA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB3B123EC70A600B06AA4 /* main.m */; };
 		E33BB3BB23ECB5C800B06AA4 /* VVSStack.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB3BA23ECB5C800B06AA4 /* VVSStack.m */; };
 		E33BB3BE23ED087E00B06AA4 /* VVSCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB3BD23ED087E00B06AA4 /* VVSCalculator.m */; };
+		E33BB3C123ED132C00B06AA4 /* VVSDigitalAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB3C023ED132C00B06AA4 /* VVSDigitalAccumulator.m */; };
+		E33BB3C423ED1BA000B06AA4 /* VVSRPNCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33BB3C323ED1BA000B06AA4 /* VVSRPNCalculatorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		E33BB3BA23ECB5C800B06AA4 /* VVSStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSStack.m; sourceTree = "<group>"; };
 		E33BB3BC23ED087E00B06AA4 /* VVSCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVSCalculator.h; sourceTree = "<group>"; };
 		E33BB3BD23ED087E00B06AA4 /* VVSCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSCalculator.m; sourceTree = "<group>"; };
+		E33BB3BF23ED132C00B06AA4 /* VVSDigitalAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVSDigitalAccumulator.h; sourceTree = "<group>"; };
+		E33BB3C023ED132C00B06AA4 /* VVSDigitalAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSDigitalAccumulator.m; sourceTree = "<group>"; };
+		E33BB3C223ED1BA000B06AA4 /* VVSRPNCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVSRPNCalculatorViewController.h; sourceTree = "<group>"; };
+		E33BB3C323ED1BA000B06AA4 /* VVSRPNCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSRPNCalculatorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,10 @@
 				E33BB3B123EC70A600B06AA4 /* main.m */,
 				E33BB3BC23ED087E00B06AA4 /* VVSCalculator.h */,
 				E33BB3BD23ED087E00B06AA4 /* VVSCalculator.m */,
+				E33BB3BF23ED132C00B06AA4 /* VVSDigitalAccumulator.h */,
+				E33BB3C023ED132C00B06AA4 /* VVSDigitalAccumulator.m */,
+				E33BB3C223ED1BA000B06AA4 /* VVSRPNCalculatorViewController.h */,
+				E33BB3C323ED1BA000B06AA4 /* VVSRPNCalculatorViewController.m */,
 			);
 			path = "RPN Calculator";
 			sourceTree = "<group>";
@@ -155,8 +165,10 @@
 				E33BB3BE23ED087E00B06AA4 /* VVSCalculator.m in Sources */,
 				E33BB3A123EC70A500B06AA4 /* AppDelegate.m in Sources */,
 				E33BB3B223EC70A600B06AA4 /* main.m in Sources */,
+				E33BB3C123ED132C00B06AA4 /* VVSDigitalAccumulator.m in Sources */,
 				E33BB3BB23ECB5C800B06AA4 /* VVSStack.m in Sources */,
 				E33BB3A423EC70A500B06AA4 /* SceneDelegate.m in Sources */,
+				E33BB3C423ED1BA000B06AA4 /* VVSRPNCalculatorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
