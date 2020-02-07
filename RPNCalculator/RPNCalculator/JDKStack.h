@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JDKStack : NSObject
 
+- (instancetype)initWith:(NSArray *)array;
+
+- (void)push:(NSNumber *)number;
+- (NSNumber *)pop;
+- (NSNumber *)peek;
+
 @end
 
 NS_ASSUME_NONNULL_END
