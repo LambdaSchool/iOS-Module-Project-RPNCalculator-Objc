@@ -7,8 +7,14 @@
 //
 
 #import "JDKCalculatorViewController.h"
+#import "JDKCalculator.h"
+#import "JDKDigitAccumulator.h"
 
 @interface JDKCalculatorViewController ()
+
+@property (nonatomic) JDKCalculator *calculator;
+@property (nonatomic) JDKDigitAccumulator *digitAccumulator;
+@property (nonatomic) NSNumberFormatter *numberFormatter;
 
 @end
 
@@ -19,5 +25,28 @@
     
     [[self textField] setDelegate:self];
 }
+
+- (IBAction)enterNumericDigit:(UIButton *)sender {
+    
+}
+
+- (IBAction)enterDecimal:(id)sender {
+}
+
+- (IBAction)addNumberToStack:(id)sender {
+}
+
+- (IBAction)addResult:(id)sender {
+}
+
+- (IBAction)subtractResult:(id)sender {
+}
+
+- (IBAction)multiplyResult:(id)sender {
+}
+
+- (IBAction)divideResult:(id)sender {
+}
+
 
 @end
