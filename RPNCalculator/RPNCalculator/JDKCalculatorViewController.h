@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JDKCalculatorViewController.h
 //  RPNCalculator
 //
 //  Created by John Kouris on 2/6/20.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface JDKCalculatorViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
