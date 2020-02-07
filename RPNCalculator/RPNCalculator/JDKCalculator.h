@@ -8,10 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
+typedef NS_ENUM(NSInteger, Operator) {
+    add,
+    subtract,
+    multiply,
+    divide
+};
 
 @interface JDKCalculator : NSObject
 
-@end
+@property (nonatomic, readonly) double topValue;
 
-NS_ASSUME_NONNULL_END
+- (void)pushNumber:(double)value;
+- (void)applyOperator:(Operator)operator;
+- (void)clear;
+
+@end
